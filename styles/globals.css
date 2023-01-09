@@ -203,3 +203,20 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-clip: text;
   text-fill-color: transparent;
 }
+.blogSection {
+  height: 100%;
+  position: relative;
+}
+
+.blogSection::before {
+  content: "";
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  background: linear-gradient(51.26deg, #e8505b -4.3%, #fc6e36 104.55%);
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  z-index: -1;
+}
