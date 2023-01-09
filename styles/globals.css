@@ -63,3 +63,111 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+.videoButtonGradient {
+  background: linear-gradient(
+    106.38deg,
+    #ff9127 18.11%,
+    #f45356 52.23%,
+    #090d48 104.85%
+  );
+  border-radius: 7px;
+}
+.sectionTitle {
+  background: linear-gradient(
+    106.38deg,
+    #ff9127 18.11%,
+    #f45356 52.23%,
+    #090d48 104.85%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 88px;
+  text-transform: uppercase;
+}
+.aboutSection {
+  position: relative;
+  height: 100%;
+}
+.aboutSection:before {
+  content: "";
+  background-repeat: no-repeat;
+  background: #fff6ef;
+  clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.aboutBackground {
+  background: linear-gradient(
+    106.38deg,
+    #ff9127 18.11%,
+    #f45356 52.23%,
+    #090d48 104.85%
+  );
+}
+.borderAboutBg {
+  position: relative;
+  z-index: 1;
+}
+.borderAboutBg::after {
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  transform: rotate(-4.63deg);
+  z-index: -1;
+}
+.testimonialBg {
+  background: #fff6ef;
+  border-radius: 20px;
+  color: black;
+}
+.swiper-slide-next .testimonialBg {
+  background: linear-gradient(276.17deg, #f45356 0%, #ff9127 104.34%);
+  border-radius: 20px;
+  color: white;
+}
+span.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: linear-gradient(
+    106.38deg,
+    #ff9127 18.11%,
+    #f45356 52.23%,
+    #090d48 104.85%
+  );
+}
+.videoSection {
+  position: relative;
+  height: 100%;
+}
+.videoSection:before {
+  content: "";
+  background-repeat: no-repeat;
+  background: #fff6ef;
+  clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.imageFull img {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+}
