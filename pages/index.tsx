@@ -267,11 +267,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="videoSection flex flex-col justify-center items-center text-center mt-[50px]">
-        <div className="absolute -left-5 top-[100px] z-50">
+      <div className="videoSection flex flex-col justify-center items-center text-center mt-[50px] overflow-hidden">
+        <div className="absolute -left-20 top-[100px] z-50">
           <img src="/assets/images/about-shape.png" alt="" />
         </div>
-        <div className="absolute -right-6 top-[200px] z-50">
+        <div className="absolute -right-20 top-[200px] z-50">
           <img src="/assets/images/video-shape.png" alt="" />
         </div>
         <div className="relative z-50 pt-[400px] pb-[350px]">
@@ -310,6 +310,148 @@ export default function Home() {
             <div className="">
               <button className="bg-white h-[70px] w-[349px] text-[24px] font-bold rounded-[7px]">
                 <p className="heroButtonGradient">Explode “Dem Sales!”</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center text-center mt-10">
+        <div className="absolute left-0 top-0 z-50">
+          <img src="/assets/images/about-shape.png" alt="" />
+        </div>
+        <div className="relative z-50 pt-[100px] pb-[100px]">
+          <div className=" w-[70%] m-auto">
+            <p className="text-[40px] leading-[77px] font-bold text-black">
+              Great products.. im sure..
+            </p>
+            <p className="text-[40px] leading-[77px] font-bold text-black">
+              Great service.. Most definitely..
+            </p>
+            <p className="text-[40px] leading-[77px] font-bold text-black">
+              Great awareness.. mmm not quite sure.. what's that, how do I
+              achieve that?
+            </p>
+            <p className="text-[40px] leading-[77px] font-bold text-black">
+              That’s ok, questions are good.
+            </p>
+            <p className="text-[40px] leading-[77px] font-bold text-black">
+              But answers are what counts in business. Let’s connect today! Get
+              the awareness you are looking for Ready to create brand hype!
+            </p>
+          </div>
+
+          <div className="py-10">
+            <button className="videoButtonGradient h-[70px] w-[349px] text-[24px] font-bold rounded-[7px]">
+              <p className="text-white">Connect with us today!</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="h-[726px] brandSection"></div>
+
+      <div className="relative py-[120px] bg-[#FFF6EF]">
+        <div className="w-[75%] m-auto text-center">
+          <p className="text-[40px] leading-[77px] font-bold">
+            Business is regular, has been the same for many years.. No extra
+            oomph.. Kinda good, but actually not.. You don’t remember your last
+            vacation.. Feelin sluggish.. Questioning your whole business..
+          </p>
+          <p className="text-[40px] leading-[77px] font-bold">
+            Hey most business owners get stuck right here, if they even get
+            here.. Eitherway, you got this and we got your back.
+          </p>
+          <p className="text-[40px] leading-[77px] font-bold">
+            Reach out to us today for a free 30 min. branding consultation!
+            Feeling growth-worthy!
+          </p>
+
+          <div className="pt-16">
+            <button className="videoButtonGradient h-[70px] w-[349px] text-[24px] font-bold rounded-[7px]">
+              <p className="text-white">Let’s Get In Touch Today</p>
+            </button>
+          </div>
+        </div>
+
+        <div className="absolute -left-[200px] bottom-[100px] z-50">
+          <img src="/assets/images/about-shape.png" alt="" />
+        </div>
+      </div>
+
+      <div className="relative py-[100px]">
+        <div className="w-[70%] m-auto text-center">
+          <p className="text-[40px] leading-[77px] font-bold mb-8">
+            Here At Outrival Markets We Are A Team Of Creative Minds, Who Will
+            Turn Your Idea Into A Brilliant Reality...
+          </p>
+          <p className="text-[40px] leading-[77px] font-bold  mb-8">
+            Don't procrastinate!
+          </p>
+          <p className="text-[40px] leading-[77px] font-bold  mb-8">
+            Feel Free To Reach Out To Us With Your Questions Comments Concerns
+            And Anxieties (Oh No, We Are Not Therapists, But If It's Anything
+            Marketing... ) We Can Surely Help Out!
+          </p>
+          <p className="text-[40px] leading-[77px] font-bold  mb-8">
+            Great products.. im sure.. Great service.. Most definitely.. Great
+            awareness.. mmm not quite sure.. whats that, how do I achieve that?
+            That’s ok, questions are good. But answers are what counts in
+            business. Let’s connect today! Get the awareness you are looking for
+            Ready to create brand hype! Connect with us today! Let’s Get In
+            Touch Today Outrival markets utilizes highly-focused marketing
+            methods perfectly strategized to drastically increase revenue.
+          </p>
+
+          <p className="text-[40px] leading-[77px] font-bold mb-8">
+            <span className="bookMeTitle block mb-8">Our process:</span>
+            Initial meeting: 30 min. meeting with a “been-there done-that”
+            marketing strategist, who will understand and adhere to the goals of
+            your company.
+          </p>
+
+          <p className="text-[40px] leading-[77px] font-bold mb-8">
+            <span className="bookMeTitle block mb-8">Follow-up Meeting:</span>A
+            detailed market-smashing marketing footprint will be laid down to
+            you, based on your niche market.
+          </p>
+
+          <p className="text-[40px] leading-[77px] font-bold mb-8">
+            <span className="bookMeTitle block mb-8">Time To Act:</span>A Here
+            is where your brands’ success story begins!
+          </p>
+          <p className="text-[40px] leading-[77px] font-bold mb-8">
+            <span className="bookMeTitle block mb-8">Growth oriented?</span>A
+            Click here to schedule your free 30 min kick-off meeting ($650
+            Value)
+          </p>
+
+          <div className="pt-16">
+            <button className="videoButtonGradient h-[70px] w-auto px-[40px] text-[24px] font-bold rounded-[7px]">
+              <p className="text-white">Yes, book me in for a 30 min session</p>
+            </button>
+          </div>
+        </div>
+
+        <div className="absolute -left-[200px] bottom-[20%] z-50">
+          <img src="/assets/images/video-shape.png" alt="" />
+        </div>
+      </div>
+
+      <div className="relative aboutBackground container m-auto rounded-[20px] w-[80%] text-center z-50 my-20">
+        <div className="borderAboutBg z-10 relative">
+          <div className="py-[52px] px-[100px]">
+            <p className="text-[25px] leading-[32px] text-white w-[70%] m-auto py-[40px]">
+              Outrival markets is Montreal based company that offers marketing
+              services for brands looking to grow revenue and popularity. We
+              thrive to turn good value brands into highly sought after niche
+              movers & shakers! Not convinced yet?
+            </p>
+            <div className="">
+              <button className="bg-white h-[70px] w-auto px-[40px] text-[24px] font-bold rounded-[7px]">
+                <p className="heroButtonGradient">
+                  See our recent brand success stories
+                </p>
               </button>
             </div>
           </div>
