@@ -111,14 +111,26 @@
     #f45356 52.23%,
     #090d48 104.85%
   );
+  border-radius: 20px;
 }
 .borderAboutBg {
   position: relative;
-  z-index: 1;
+  z-index: 999;
 }
-.borderAboutBg::after {
+/* .borderAboutBg::after {
   content: "";
-  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: 20px;
+  transform: rotate(-4.63deg);
+  z-index: -1;
+} */
+.aboutBackground::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -219,4 +231,117 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 60%;
   height: 100%;
   z-index: -1;
+}
+.menuIconBg {
+  background: linear-gradient(276.17deg, #f45356 0%, #ff9127 104.34%);
+  backdrop-filter: blur(25px);
+}
+.processTitle {
+  background: linear-gradient(276.17deg, #f45356 0%, #ff9127 104.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 77px;
+}
+
+/* Border Style one */
+.borderProcessRight::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1%;
+  height: 100%;
+  border-right: 2px dashed #f45356;
+  content: "";
+}
+
+.borderProcessLeft {
+  padding: 0px 130px;
+}
+
+.borderProcessLineBorder::after {
+  position: absolute;
+  top: 50%;
+  left: -8%;
+  width: 110px;
+  height: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  content: "";
+}
+
+/* BorderTwo */
+.borderProcessLeft::after {
+  position: absolute;
+  top: 32%;
+  left: -7px;
+  width: 1%;
+  height: 100%;
+  border-right: 2px dashed #f45356;
+  content: "";
+}
+
+.borderProcessLineBorderLeft::after {
+  position: absolute;
+  top: 50%;
+  right: -8%;
+  width: 110px;
+  height: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  content: "";
+}
+.borderProcessRight {
+  padding: 0px 130px;
+}
+
+/* Three Border */
+
+.borderThree::after {
+  position: absolute;
+  top: -1%;
+  right: 0;
+  width: 1%;
+  height: 100%;
+  border-right: 2px dashed #f45356;
+  content: "";
+}
+
+.borderThree {
+  padding: 0px 130px;
+}
+
+.borderThreeIcon::after {
+  position: absolute;
+  top: 50%;
+  left: -8%;
+  width: 110px;
+  height: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  content: "";
+}
+/* Border Four */
+.fourStyle::after {
+  position: absolute;
+  top: -34%;
+  left: -7px;
+  width: 1%;
+  height: 100%;
+  border-right: 2px dashed #f45356;
+  content: "";
+}
+
+.fourStyleImage::after {
+  position: absolute;
+  bottom: 23%;
+  right: -8%;
+  width: 110px;
+  height: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  content: "";
+}
+.fourStyle {
+  padding: 0px 130px;
 }

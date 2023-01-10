@@ -14,7 +14,17 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <div className="h-[1220px] z-50 relative flex items-center justify-center heroSection">
+      <div className="absolute inset-0 flex justify-center z-50 top-2">
+        <div className="">
+          <img
+            className=""
+            src="/assets/images/logo.png"
+            width="200"
+            alt="logo"
+          />
+        </div>
+      </div>
+      <div className="h-[1220px] z-30 relative flex items-center justify-center heroSection">
         <div className="z-50 relative text-center">
           <p className="text-[88px] text-white font-bold leading-[108px] w-[70%] m-auto text-center">
             UTLIZING “BUNKER-BUSTER” MARKETING METHODS TO DETONATE YOUR ONLINE
@@ -62,8 +72,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative aboutBackground container m-auto rounded-[20px] w-[80%] text-center -mt-[15%] z-50">
-        <div className="borderAboutBg z-10 relative">
+      <div className="relative  container m-auto rounded-[20px] w-[80%] text-center -mt-[15%] z-50">
+        <div className="aboutBackground">
           <div className="py-[52px] px-[100px]">
             <p className="text-[64px] leading-[88px] font-bold text-white">
               Hey! You Are At The Right Spot.. Lets Work Together & Explode Your
@@ -268,7 +278,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="videoSection flex flex-col justify-center items-center text-center mt-[50px] overflow-hidden">
+      <div className="relative videoSection flex flex-col justify-center items-center text-center mt-[50px] overflow-hidden">
         <div className="absolute -left-20 top-[100px] z-50">
           <img src="/assets/images/about-shape.png" alt="" />
         </div>
@@ -297,8 +307,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative aboutBackground container m-auto rounded-[20px] w-[80%] text-center -mt-[13%] z-50">
-        <div className="borderAboutBg z-10 relative">
+      <div className="relative  container m-auto rounded-[20px] w-[80%] text-center -mt-[13%] z-50">
+        <div className="aboutBackground">
           <div className="py-[52px] px-[100px]">
             <p className="text-[64px] leading-[88px] font-bold text-white">
               Brand Awarness
@@ -317,7 +327,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center text-center mt-10">
+      <div className="flex flex-col justify-center items-center text-center mt-10 relative">
         <div className="absolute left-0 top-0 z-50">
           <img src="/assets/images/about-shape.png" alt="" />
         </div>
@@ -380,6 +390,89 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="bg-[#090D48] py-[100px]">
+        <div className="m-auto container text-center">
+          <h2 className="sectionTitle">Our process</h2>
+          <div className="mt-10">
+            <div className="px-20 pb-20">
+              <div className="grid grid-cols-2 text-center justify-between items-center">
+                <div className="span-1 text-center relative">
+                  <div className="borderProcessRight">
+                    <h2 className="processTitle py-3">Initial Meeting</h2>
+                    <p className="text-[32px] leading-[34px] font-[500] text-white">
+                      Initial meeting: 30 min. meeting with a “been-there
+                      done-that” marketing strategist, who will understand and
+                      adhere to the goals of your company.
+                    </p>
+                  </div>
+                </div>
+                <div className="span-1 relative">
+                  <div className="borderProcessLineBorder text-center inline-block m-auto ">
+                    <img src="/assets/images/process02.png" alt="process" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="px-20 pb-20">
+              <div className="grid grid-cols-2 text-center justify-between items-center">
+                <div className="span-1 text-center relative order-last">
+                  <div className="borderProcessLeft">
+                    <h2 className="processTitle py-3">Follow-up Meeting</h2>
+                    <p className="text-[32px] leading-[34px] font-[500] text-white">
+                      A detailed market-smashing marketing footprint will be
+                      laid down to you, based on your niche market.
+                    </p>
+                  </div>
+                </div>
+                <div className="span-1 relative">
+                  <div className="borderProcessLineBorderLeft text-center inline-block m-auto ">
+                    <img src="/assets/images/process01.png" alt="process" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="px-20 pb-20">
+              <div className="grid grid-cols-2 text-center justify-between items-center">
+                <div className="span-1 text-center relative">
+                  <div className="borderThree">
+                    <h2 className="processTitle py-3">Time To Act</h2>
+                    <p className="text-[32px] leading-[34px] font-[500] text-white">
+                      Here is where your brands’ success story begins!
+                    </p>
+                  </div>
+                </div>
+                <div className="span-1 relative">
+                  <div className="borderThreeIcon text-center inline-block m-auto ">
+                    <img src="/assets/images/process04.png" alt="process" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="px-20 pb-20">
+              <div className="grid grid-cols-2 text-center justify-between items-center">
+                <div className="span-1 text-center relative order-last">
+                  <div className="fourStyle">
+                    <h2 className="processTitle py-3">Follow-up Meeting</h2>
+                    <p className="text-[32px] leading-[34px] font-[500] text-white">
+                      A detailed market-smashing marketing footprint will be
+                      laid down to you, based on your niche market.
+                    </p>
+                  </div>
+                </div>
+                <div className="span-1 relative">
+                  <div className="fourStyleImage text-center inline-block m-auto ">
+                    <img src="/assets/images/process01.png" alt="process" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="relative py-[100px]">
         <div className="w-[70%] m-auto text-center">
           <p className="text-[40px] leading-[77px] font-bold mb-8">
@@ -439,8 +532,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative aboutBackground container m-auto rounded-[20px] w-[80%] text-center z-50 my-20">
-        <div className="borderAboutBg z-10 relative">
+      <div className="relative container m-auto rounded-[20px] w-[80%] text-center z-50 my-20">
+        <div className="aboutBackground">
           <div className="py-[52px] px-[100px]">
             <p className="text-[25px] leading-[32px] text-white w-[70%] m-auto py-[40px]">
               Outrival markets is Montreal based company that offers marketing
@@ -459,7 +552,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="blogSection pt-[100px] md:pb-[140px] pb-[60px] bg-auto md:px-0 px-10 mt-[150px]">
+      <div className="blogSection pt-[100px] md:pb-[140px] pb-[60px] bg-auto md:px-0 px-10 mt-[150px] overflow-x-hidden">
         <div className="absolute -right-[200px] top-[15%] z-50">
           <img src="/assets/images/video-shape.png" alt="" />
         </div>
