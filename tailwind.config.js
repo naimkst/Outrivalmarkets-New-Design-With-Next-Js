@@ -18,6 +18,8 @@ module.exports = {
         content: ['"Ageo"', "sans-serif"],
       },
       screens: {
+        desktop1440: { max: "1440px" },
+
         desktop: { max: "1279px" },
 
         miniLaptop: { max: "1278px" },

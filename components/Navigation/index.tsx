@@ -22,39 +22,51 @@ export const Navigation = () => {
       </div>
 
       {isOpen && (
-        <div className="h-[100vh] bg-white/80 fixed top-0 z-[60]  w-full backdrop-blur-md">
+        <div className="h-[100vh] bg-white/80 fixed top-0 z-[60] w-full backdrop-blur-md">
           <ul className="flex items-center justify-center flex-col h-full">
-            <li className="mb-8 hover:text-primary  text-black">
+            <li className="mb-8 group hover:text-primary  text-black tablet:mb-4">
               <a
-                className="text-[88px] leading-[108px] font-bold uppercase"
+                className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href=""
               >
                 Home
               </a>
+              <p className="text-black text-center font-bold group-hover:text-primary">
+                Our Home Sweet Home
+              </p>
             </li>
-            <li className="mb-8 hover:text-primary  text-black">
+            <li className="mb-8 group hover:text-primary  text-black tablet:mb-4">
               <a
-                className="text-[88px] leading-[108px] font-bold uppercase"
+                className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href=""
               >
                 About
               </a>
+              <p className="text-black text-center font-bold group-hover:text-primary">
+                Insights On Who We Are
+              </p>
             </li>
-            <li className="mb-8 hover:text-primary  text-black">
+            <li className="mb-8 group hover:text-primary  text-black tablet:mb-4">
               <a
-                className="text-[88px] leading-[108px] font-bold uppercase"
+                className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href=""
               >
                 Project
               </a>
+              <p className="text-black text-center font-bold group-hover:text-primary">
+                A Glimpse Of The Magic We Do
+              </p>
             </li>
-            <li className="mb-8 hover:text-primary  text-black">
+            <li className="mb-8 group hover:text-primary  text-black tablet:mb-4">
               <a
-                className="text-[88px] leading-[108px] font-bold uppercase"
+                className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href=""
               >
                 Contact Us
               </a>
+              <p className="text-black text-center font-bold group-hover:text-primary">
+                Hey Y’never Know! Let’s Hear From You
+              </p>
             </li>
           </ul>
         </div>

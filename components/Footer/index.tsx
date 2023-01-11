@@ -12,8 +12,8 @@ import { BsTelephone } from "react-icons/bs";
 export const Footer = () => {
   return (
     <div className="">
-      <div className="bg-[#090D48] py-[65px] items-center">
-        <div className="container max-w-[1307px] m-auto grid grid-cols-1 gap-4 justify-between md:grid-cols-4">
+      <div className="bg-[#090D48] py-[65px] items-center tablet:px-5 tablet:text-center">
+        <div className="container m-auto grid tablet:grid-cols-1 gap-4 justify-between grid-cols-4">
           <div>
             <div className="flex justify-center content-center md:content-start">
               <Image
@@ -41,11 +41,11 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
-          <div>
-            <h2 className="text-[30px] leading-[26px] text-primary font-bold text-center md:text-left mb-7">
+          <div className="">
+            <h2 className="text-[30px] leading-[26px] text-primary font-bold text-left mb-7 tablet:text-center">
               Our Company
             </h2>
-            <ul className="text-center md:text-left">
+            <ul className="tablet:text-center text-left">
               <li>
                 <a
                   className="text-white text-[19px] leading-[35px] font-[300] hover:text-[#FF8B2D] "
@@ -81,10 +81,10 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="text-[30px] leading-[26px] text-primary font-bold text-center md:text-left mb-7">
+            <h2 className="text-[30px] leading-[26px] text-primary font-bold text-center md:text-left mb-7 tablet:text-center">
               Service
             </h2>
-            <ul className="content-center text-center md:text-left">
+            <ul className="content-center tablet:text-center text-left">
               <li>
                 <a
                   className="text-white text-[19px] leading-[35px] font-[300] hover:text-[#FF8B2D] "
@@ -128,17 +128,17 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="text-[30px] leading-[26px] text-primary font-bold text-center md:text-left mb-7">
+            <h2 className="text-[30px] leading-[26px] text-primary font-bold text-center md:text-left mb-7 tablet:text-center">
               Our Address
             </h2>
-            <div className="flex-row text-center md:text-left">
+            <div className="flex-row tablet:text-center text-left">
               <div>
                 <p className="text-white text-[19px] font-[300] leading-[30px] hover:text-[#FF8B2D]">
                   5055 North 03th Avenue,Penscola,
                   <br /> FL 32503, New York
                 </p>
               </div>
-              <div className="mt-[20px] items-center justify-center flex text-center md:text-left md:justify-start">
+              <div className="mt-[20px] items-center tablet:justify-center flex tablet:text-center text-left justify-start">
                 <BsTelephone color="#fff" className="text-[25px] mr-4" />
                 <a
                   className="text-white text-[19px] leading-[30px] font-[300] hover:text-[#FF8B2D]"
@@ -148,7 +148,7 @@ export const Footer = () => {
                 </a>
               </div>
 
-              <div className="mt-[20px] items-center justify-center flex md:text-left md:justify-start">
+              <div className="mt-[20px] items-center tablet:justify-center flex md:text-left md:justify-start">
                 <BiEnvelope color="#fff" className="text-[25px] mr-4" />
                 <a
                   className="text-white text-[19px] leading-[30px] font-[300] hover:text-[#FF8B2D]"
