@@ -34,7 +34,7 @@ export default function Home() {
           </p>
           <div className="py-16">
             <button className="bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-              <p className="heroButtonGradient text24">Explode “Dem Sales!”</p>
+              <p className="heroButtonGradient text24">{`Explode “Dem Sales!”`}</p>
             </button>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function Home() {
             <div className="pt-10">
               <button className="bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
                 <p className="heroButtonGradient text24">
-                  Explode “Dem Sales!”
+                  {`Explode “Dem Sales!”`}
                 </p>
               </button>
             </div>
@@ -154,8 +154,8 @@ export default function Home() {
                   <span>
                     <ImQuotesLeft className="left-0 mb-3" />
                   </span>
-                  "Mattis viverra ultricies vel fames. Tortor velit et blandit
-                  vulputate augue sapien maecenas egestas volutpat."
+                  {`"Mattis viverra ultricies vel fames. Tortor velit et blandit
+                  vulputate augue sapien maecenas egestas volutpat."`}
                   <span className="flex items-end justify-end">
                     <ImQuotesRight className="inline-block" />
                   </span>
@@ -183,8 +183,8 @@ export default function Home() {
                   <span>
                     <ImQuotesLeft className="left-0 mb-3" />
                   </span>
-                  "Mattis viverra ultricies vel fames. Tortor velit et blandit
-                  vulputate augue sapien maecenas egestas volutpat."
+                  {`"Mattis viverra ultricies vel fames. Tortor velit et blandit
+                  vulputate augue sapien maecenas egestas volutpat."`}
                   <span className="flex items-end justify-end">
                     <ImQuotesRight className="inline-block" />
                   </span>
@@ -211,8 +211,8 @@ export default function Home() {
                   <span>
                     <ImQuotesLeft className="left-0 mb-3" />
                   </span>
-                  "Mattis viverra ultricies vel fames. Tortor velit et blandit
-                  vulputate augue sapien maecenas egestas volutpat."
+                  {`"Mattis viverra ultricies vel fames. Tortor velit et blandit
+                  vulputate augue sapien maecenas egestas volutpat."`}
                   <span className="flex items-end justify-end">
                     <ImQuotesRight className="inline-block" />
                   </span>
@@ -239,8 +239,8 @@ export default function Home() {
                   <span>
                     <ImQuotesLeft className="left-0 mb-3" />
                   </span>
-                  "Mattis viverra ultricies vel fames. Tortor velit et blandit
-                  vulputate augue sapien maecenas egestas volutpat."
+                  {`"Mattis viverra ultricies vel fames. Tortor velit et blandit
+                  vulputate augue sapien maecenas egestas volutpat."`}
                   <span className="flex items-end justify-end">
                     <ImQuotesRight className="inline-block" />
                   </span>
@@ -267,8 +267,8 @@ export default function Home() {
                   <span>
                     <ImQuotesLeft className="left-0 mb-3" />
                   </span>
-                  "Mattis viverra ultricies vel fames. Tortor velit et blandit
-                  vulputate augue sapien maecenas egestas volutpat."
+                  {`"Mattis viverra ultricies vel fames. Tortor velit et blandit
+                  vulputate augue sapien maecenas egestas volutpat."`}
                   <span className="flex items-end justify-end">
                     <ImQuotesRight className="inline-block" />
                   </span>
@@ -299,8 +299,8 @@ export default function Home() {
               7 MUST READ VIGOROUS MARKETING TACTICS FOR 2023!!
             </h2>
             <p className="text64 font-bold w-[70%] m-auto tablet:w-full tablet:px-5 phone:px-0">
-              7 Awesome ‘non-rocket-science’ tips that marketing companies don’t
-              want you to know
+              {`7 Awesome ‘non-rocket-science’ tips that marketing companies don’t
+              want you to know`}
             </p>
           </div>
           <div className="imageFull w-[80%] m-auto tablet:w-full tablet:px-5 phone:px-2 phone:w-full">
@@ -328,7 +328,7 @@ export default function Home() {
             </p>
             <div className="">
               <button className="bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-                <p className="heroButtonGradient">Explode “Dem Sales!”</p>
+                <p className="heroButtonGradient">{`Explode “Dem Sales!”`}</p>
               </button>
             </div>
           </div>
@@ -348,15 +348,15 @@ export default function Home() {
               Great service.. Most definitely..
             </p>
             <p className="text40 font-bold text-black">
-              Great awareness.. mmm not quite sure.. what's that, how do I
-              achieve that?
+              {`Great awareness.. mmm not quite sure.. what's that, how do I
+              achieve that?`}
             </p>
             <p className="text40 font-bold text-black">
-              That’s ok, questions are good.
+              {`That’s ok, questions are good.`}
             </p>
             <p className="text40 font-bold text-black">
-              But answers are what counts in business. Let’s connect today! Get
-              the awareness you are looking for Ready to create brand hype!
+              {`But answers are what counts in business. Let’s connect today! Get
+              the awareness you are looking for Ready to create brand hype!`}
             </p>
           </div>
 
@@ -387,12 +387,12 @@ export default function Home() {
                 7 MUST READ VIGOROUS MARKETING TACTICS FOR 2023!!
               </h2>
               <p className="text64 text-black font-bold py-8 phone:text-[30px]">
-                7 Awesome ‘non-rocket-science’ tips that marketing companies
-                don’t want you to know
+                {`7 Awesome ‘non-rocket-science’ tips that marketing companies
+                don’t want you to know`}
               </p>
               <div className="pt-5">
                 <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[45px]">
-                  <p className="text-white">Let’s Get In Touch Today</p>
+                  <p className="text-white">{`Let’s Get In Touch Today`}</p>
                 </button>
               </div>
             </div>
@@ -407,9 +407,9 @@ export default function Home() {
       <div className="relative py-[120px] bg-[#090D48]">
         <div className="w-[75%] m-auto text-center tablet:w-full tablet:px-5">
           <p className="text40 font-bold text-white">
-            Business is regular, has been the same for many years.. No extra
+            {`Business is regular, has been the same for many years.. No extra
             oomph.. Kinda good, but actually not.. You don’t remember your last
-            vacation.. Feelin sluggish.. Questioning your whole business..
+            vacation.. Feelin sluggish.. Questioning your whole business..`}
           </p>
           <p className="text40 font-bold text-white">
             Hey most business owners get stuck right here, if they even get
@@ -422,7 +422,7 @@ export default function Home() {
 
           <div className="pt-16">
             <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-              <p className="text-white">Let’s Get In Touch Today</p>
+              <p className="text-white">{`Let’s Get In Touch Today`}</p>
             </button>
           </div>
         </div>
@@ -439,20 +439,20 @@ export default function Home() {
             Here At Outrival Markets We Are A Team Of Creative Minds, Who Will
             Turn Your Idea Into A Brilliant Reality...
           </p>
-          <p className="text40 font-bold  mb-8">Don't procrastinate!</p>
+          <p className="text40 font-bold  mb-8">{`Don't procrastinate!`}</p>
           <p className="text40 font-bold  mb-8 ">
-            Feel Free To Reach Out To Us With Your Questions Comments Concerns
+            {`Feel Free To Reach Out To Us With Your Questions Comments Concerns
             And Anxieties (Oh No, We Are Not Therapists, But If It's Anything
-            Marketing... ) We Can Surely Help Out!
+            Marketing... ) We Can Surely Help Out!`}
           </p>
           <p className="text40 font-bold mb-8">
-            Great products.. im sure.. Great service.. Most definitely.. Great
+            {` Great products.. im sure.. Great service.. Most definitely.. Great
             awareness.. mmm not quite sure.. whats that, how do I achieve that?
             That’s ok, questions are good. But answers are what counts in
             business. Let’s connect today! Get the awareness you are looking for
             Ready to create brand hype! Connect with us today! Let’s Get In
             Touch Today Outrival markets utilizes highly-focused marketing
-            methods perfectly strategized to drastically increase revenue.
+            methods perfectly strategized to drastically increase revenue.`}
           </p>
         </div>
 
