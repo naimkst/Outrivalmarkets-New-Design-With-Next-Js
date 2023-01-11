@@ -75,7 +75,7 @@ export default function Home() {
       </div>
 
       {/* Testimonial section */}
-      <div className="relative container m-auto rounded-[20px] w-[80%] text-center -mt-[15%] z-50 tablet:w-full tablet:px-5 tablet:mt-10 overflow-hidden phone:w-full phone:px-4">
+      <div className="relative container m-auto rounded-[20px] w-[80%] text-center -mt-[15%] z-50 tablet:w-full tablet:px-5 tablet:mt-10 phone:w-full phone:px-4">
         <div className="aboutBackground">
           <div className="py-[52px] px-[100px] phone:px-4 tablet:px-10">
             <p className="text64 font-bold text-white">
