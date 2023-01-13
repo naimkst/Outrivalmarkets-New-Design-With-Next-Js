@@ -187,6 +187,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: linear-gradient(276.17deg, #f45356 0%, #ff9127 104.34%);
   backdrop-filter: blur(25px);
 }
+.hoveIconColor:hover {
+  background: linear-gradient(276.17deg, #f45356 0%, #ff9127 104.34%);
+  backdrop-filter: blur(25px);
+}
+.menuHoverGradientColor:hover {
+  background: linear-gradient(276.17deg, #f45356 0%, #ff9127 104.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 .processTitle {
   background: linear-gradient(276.17deg, #f45356 0%, #ff9127 104.34%);
   -webkit-background-clip: text;

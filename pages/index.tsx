@@ -28,15 +28,21 @@ export default function Home() {
       {/* Our Philosophy: */}
       <div className="h-[1220px] z-30 relative flex items-center justify-center heroSection phone:h-[100vh] phone:px-4">
         <div className="z-50 relative text-center">
-          <p className="text88 text-white font-bold w-[70%] m-auto text-center tablet:w-full ">
-            UTLIZING “BUNKER-BUSTER” MARKETING METHODS TO DETONATE YOUR ONLINE
-            PRESENCE
+          <p className="text88 text-white font-bold w-[100%] m-auto text-center tablet:w-full ">
+            UTLIZING <br /> “BUNKER-BUSTER” <br />
+            MARKETING METHODS <br />
+            TO DETONATE YOUR <br />
+            BRAND PRESENCE
           </p>
           <div className="py-16">
-            <button className="bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-              <p className="heroButtonGradient text24">{`Explode “Dem Sales!”`}</p>
+            <button className="bg-white h-[70px] px-[45px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
+              <p className="heroButtonGradient text24">{`Lets Explode “Dem Sales!”`}</p>
             </button>
           </div>
+        </div>
+
+        <div className="absolute left-[7%] top-[5%] tablet:hidden">
+          <img src="/assets/images/bulb.png" alt="" />
         </div>
       </div>
 
@@ -54,17 +60,25 @@ export default function Home() {
           <img src="/assets/images/about-shape.png" alt="" />
         </div>
         <div className="relative z-50 pt-[300px] pb-[350px] tablet:pt-12 tablet:pb-12 tablet:bg-[#fff6ef]">
-          <div className=" w-[70%] m-auto tablet:w-full tablet:px-5">
+          <div className=" w-[100%] m-auto tablet:w-full tablet:px-5">
             <p className="text40 font-bold text-black">
               How Is Your Brands Online Presence?
             </p>
-            <p className="text40 font-bold text-black">Does It Need A Boost?</p>
+            <p className="text40 font-bold text-black py-10">
+              Does It Need A Boost?
+            </p>
             <p className="text40 font-bold text-black">
-              Perhaps You Are Getting Views But No Conversions Or Sales? Are
-              Your Products Being Showcased Properly Online? Or.. Not Really..
+              Perhaps You Are Getting Views But No Conversions Or Sales?
+              <br />
+              Are Your Products Being Showcased Properly Online?
+            </p>
+            <p className="text40 font-bold text-black py-10">
+              {" "}
+              Or.. Not Really..
             </p>
             <p className="text40 font-bold text-black">
               Does Your Brand Have What It Takes To Skyrocket Your E-commerce
+              <br />
               Sales Through the roof In 2023?
             </p>
             <p className="text40 font-bold text-black">
@@ -83,9 +97,9 @@ export default function Home() {
               Sales – Bazooka Style!!
             </p>
             <div className="pt-10">
-              <button className="bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
+              <button className="bg-white h-[70px] px-[40px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
                 <p className="heroButtonGradient text24">
-                  {`Explode “Dem Sales!”`}
+                  {`Ready to learn how?!”`}
                 </p>
               </button>
             </div>
@@ -95,12 +109,12 @@ export default function Home() {
       {/* Video Section */}
       <div className="pt-[200px] container m-auto text-center tablet:pt-12 tablet:px-10 phone:px-4 desktop:px-10">
         <div>
-          <h2 className="sectionTitle text44">
+          <h2 className="sectionTitle text44 mb-8">
             WHAT OUR CLIENTS ARE SAYING ABOUT US
           </h2>
           <p className="text64 text-black font-bold w-[80%] m-auto text-center tablet:w-full tablet:px-5 phone:w-full phone:px-0">
-            Some Of Our Favorite Clients, That Left Some Good Words For Us.. Kid
-            You Not, For A Good Reason!
+            Some Of Our Favorite Clients, Left Some Good Words For Us.. Kid You
+            Not, For A Good Reason!
           </p>
         </div>
 
@@ -295,12 +309,11 @@ export default function Home() {
         </div>
         <div className="relative z-50 pt-[400px] pb-[350px] tablet:pt-12 tablet:pb-12">
           <div className="container m-auto text-center py-14 tablet:py-5">
-            <h2 className="sectionTitle text44">
-              7 MUST READ VIGOROUS MARKETING TACTICS FOR 2023!!
+            <h2 className="sectionTitle text44 mb-5">
+              MUST WATCH EYE-OPENER TRUTH REVEALING VIDEO!!
             </h2>
-            <p className="text64 font-bold w-[70%] m-auto tablet:w-full tablet:px-5 phone:px-0">
-              {`7 Awesome ‘non-rocket-science’ tips that marketing companies don’t
-              want you to know`}
+            <p className="text64 font-bold w-[100%] m-auto tablet:w-full tablet:px-5 phone:px-0">
+              Painfull Truth About Outrivaling On <br /> Social Media Platforms
             </p>
           </div>
           <div className="imageFull w-[80%] m-auto tablet:w-full tablet:px-5 phone:px-2 phone:w-full">
@@ -319,17 +332,18 @@ export default function Home() {
         <div className="aboutBackground">
           <div className="py-[52px] px-[100px] phone:px-4">
             <p className="text64 font-bold text-white phone:text-[40px]">
-              Brand Awarness
+              Brand Awareness
             </p>
 
-            <p className="text25 text-white w-[70%] m-auto py-[40px] phone:w-full phone:px-0 tablet:w-full tablet:px-0">
+            {/* <p className="text25 text-white w-[70%] m-auto py-[40px] phone:w-full phone:px-0 tablet:w-full tablet:px-0">
               Consectetur eleifend a libero arcu tristique a urna tortor. Odio
               nulla dignissim fames in non.
-            </p>
+            </p> */}
             <div className="">
-              <button className="bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-                <p className="heroButtonGradient">{`Explode “Dem Sales!”`}</p>
-              </button>
+              <a
+                className="text44 underline font-bold text-white phone:text-[30px]"
+                href=""
+              >{`Let's GET REAL Hear`}</a>
             </div>
           </div>
         </div>
@@ -340,7 +354,7 @@ export default function Home() {
           <img src="/assets/images/about-shape.png" alt="" />
         </div> */}
         <div className="relative z-50 pt-[100px] pb-[100px] tablet:pt-12 tablet:pb-12">
-          <div className=" w-[67%] m-auto tablet:w-full tablet:px-5">
+          <div className=" w-[100%] m-auto tablet:w-full tablet:px-5">
             <p className="text40 font-bold text-black">
               Great products.. im sure..
             </p>
@@ -348,21 +362,22 @@ export default function Home() {
               Great service.. Most definitely..
             </p>
             <p className="text40 font-bold text-black">
-              {`Great awareness.. mmm not quite sure.. what's that, how do I
-              achieve that?`}
+              {`Great awareness.. mmm not quite sure.. what's that, how do I`}
+              <br /> achieve that?
             </p>
             <p className="text40 font-bold text-black">
               {`That’s ok, questions are good.`}
             </p>
             <p className="text40 font-bold text-black">
-              {`But answers are what counts in business. Let’s connect today! Get
-              the awareness you are looking for Ready to create brand hype!`}
+              {`But answers are what counts in business.`} <br />
+              {`Get the awareness you are looking for `} <br />
+              {`and ready yourself to create brand hype!`}
             </p>
           </div>
 
           <div className="py-10">
             <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-              <p className="text-white">Connect with us today!</p>
+              <p className="text-white">{`Let's connect today!`}</p>
             </button>
           </div>
         </div>
@@ -374,25 +389,28 @@ export default function Home() {
       {/* get in touch today  */}
       <div className="relative overflow-hidden py-[60px] tablet:pb-12">
         <div className="container">
-          <div className="grid grid-cols-2 items-center justify-between gap-5 tablet:grid-cols-1">
-            <div className="tablet:text-center">
+          <div className="grid grid-cols-7 items-center justify-between tablet:grid-cols-1">
+            <div className="tablet:text-center col-span-3">
               <img
                 src="/assets/images/book.png"
                 className="tablet:w-2/3 tablet:inline-block"
                 alt=""
               />
             </div>
-            <div className="tablet:text-center tablet:px-5">
+            <div className="tablet:text-center tablet:px-5  col-span-4">
               <h2 className="sectionTitle text44">
                 7 MUST READ VIGOROUS MARKETING TACTICS FOR 2023!!
               </h2>
               <p className="text64 text-black font-bold py-8 phone:text-[30px]">
-                {`7 Awesome ‘non-rocket-science’ tips that marketing companies
-                don’t want you to know`}
+                {`7 Awesome`} <br />
+                {`‘non-rocket-science’ tips`} <br />
+                {`that marketing companies`} <br />
+                {`don’t want`} <br />
+                {`you to know`}
               </p>
               <div className="pt-5">
                 <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[45px]">
-                  <p className="text-white">{`Let’s Get In Touch Today`}</p>
+                  <p className="text-white">{`Download here`}</p>
                 </button>
               </div>
             </div>
@@ -405,18 +423,30 @@ export default function Home() {
 
       {/* marketing struture section */}
       <div className="relative py-[120px] bg-[#090D48]">
-        <div className="w-[75%] m-auto text-center tablet:w-full tablet:px-5">
+        <div className="w-[100%] m-auto text-center tablet:w-full tablet:px-5">
           <p className="text40 font-bold text-white">
-            {`Business is regular, has been the same for many years.. No extra
-            oomph.. Kinda good, but actually not.. You don’t remember your last
-            vacation.. Feelin sluggish.. Questioning your whole business..`}
+            {`Business is regular, has been the same for many years..`}
+          </p>
+          <p className="text40 font-bold text-white py-10">
+            {`No extra oomph..`}
+          </p>
+
+          <p className="text40 font-bold text-white pb-10">
+            {`Kinda good, but actually not.. `}
+          </p>
+
+          <p className="text40 font-bold text-white">
+            {`You don’t remember your last vacation.. Feelin sluggish..`} <br />{" "}
+            {` Questioning your whole business..`}
+          </p>
+
+          <p className="text40 font-bold text-white">
+            Hey most business owners get stuck right here, if they even get{" "}
+            <br /> here.. Eitherway, you got this and we got your back.
           </p>
           <p className="text40 font-bold text-white">
-            Hey most business owners get stuck right here, if they even get
-            here.. Eitherway, you got this and we got your back.
-          </p>
-          <p className="text40 font-bold text-white">
-            Reach out to us today for a free 30 min. branding consultation!
+            Reach out to us today for a free 30 min. branding consultation!{" "}
+            <br />
             Feeling growth-worthy!
           </p>
 
@@ -445,17 +475,11 @@ export default function Home() {
             And Anxieties (Oh No, We Are Not Therapists, But If It's Anything
             Marketing... ) We Can Surely Help Out!`}
           </p>
-          <p className="text40 font-bold mb-8">
-            {` Great products.. im sure.. Great service.. Most definitely.. Great
-            awareness.. mmm not quite sure.. whats that, how do I achieve that?
-            That’s ok, questions are good. But answers are what counts in
-            business. Let’s connect today! Get the awareness you are looking for
-            Ready to create brand hype! Connect with us today! Let’s Get In
-            Touch Today Outrival markets utilizes highly-focused marketing
-            methods perfectly strategized to drastically increase revenue.`}
-          </p>
         </div>
 
+        <div className="absolute right-0 top-[5%] z-50 tablet:hidden">
+          <img src="/assets/images/bulb-color.png" alt="" />
+        </div>
         <div className="absolute left-0 bottom-[5%] z-50">
           <img src="/assets/images/singleShap.png" alt="" />
         </div>
