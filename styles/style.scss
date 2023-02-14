@@ -1,0 +1,464 @@
+$bg-color: #090D48;
+$bg-color2: #FFF6EF;
+$white: #fff;
+$theme-primary-color: #FF8B2D;
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+.theme-btn {
+    display: inline-block;
+    color: $white;
+    line-height: 70px;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+button {
+    p {
+        margin-bottom: 0;
+    }
+
+    @media(max-width:767px){
+      height: 100%!important;
+      padding: 20px;
+      font-size: 21px!important;
+    }
+}
+
+.ft-widget {
+    h2 {
+        color: $theme-primary-color;
+        text-align: left;
+    }
+}
+
+.sectionTitle {
+    @media(max-width:1440px) {
+        font-size: 32px;
+        line-height: 58px;
+    }
+}
+
+.team-hero-section {
+    .about-hero-text {
+        max-width: 1120px;
+        margin: 0 auto;
+
+        p {
+            text-transform: uppercase;
+
+            @media(max-width:767px) {
+                font-size: 42px;
+                line-height: 62px;
+            }
+        }
+
+        .button {
+            line-height: 70px;
+        }
+    }
+}
+
+// team-about-section
+
+.team-about-section {
+    padding: 100px 0;
+
+    @media(max-width:767px) {
+        padding-bottom: 0;
+    }
+
+    .team-about-text {
+        text-align: center;
+
+        .team-about-text-top {
+            max-width: 1060px;
+            margin: 0 auto;
+
+            h3 {
+                font-family: 'Maximum Impact';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 64px;
+                line-height: 88px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #000000;
+                margin-top: 40px;
+                margin-bottom: 90px;
+
+                @media(max-width:1399px) {
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                }
+
+                @media(max-width:767px) {
+                    font-size: 40px;
+                    line-height: 61px;
+                }
+            }
+        }
+
+        p {
+            max-width: 1003px;
+            margin: 0 auto;
+            font-size: 40px;
+            line-height: 77px;
+            font-family: 'Maximum Impact';
+
+            @media(max-width:767px) {
+                font-size: 40px;
+                line-height: 61px;
+            }
+
+            span {
+                font-family: 'Doctor Glitch';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 77px;
+                background: linear-gradient(276.17deg, #f45356 0%, #ff9127 104.34%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+
+    }
+
+    .shape {
+        position: relative;
+        bottom: -150px;
+        left: -50px;
+
+        @media(max-width:1199px) {
+            max-width: 400px;
+        }
+    }
+}
+
+
+// founder-section
+
+.founder-section {
+    padding: 350px 0 150px;
+    background: $bg-color;
+    clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
+
+    @media(max-width:767px) {
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+        padding: 150px 0 80px;
+    }
+
+    .founder-text {
+        max-width: 1103px;
+        margin: 0 auto;
+        text-align: center;
+
+        .sectionTitle {
+            background: linear-gradient(106.38deg, #FF9127 18.11%, #F45356 86.9%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin-bottom: 40px;
+            display: block;
+
+            @media(max-width:767px) {
+                margin-bottom: 10px;
+            }
+        }
+
+        p {
+            font-family: 'Maximum Impact';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 77px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+
+            @media(max-width:767px) {
+                font-size: 30px;
+                line-height: 37px;
+            }
+        }
+    }
+}
+
+// team-info-section
+
+.team-info-section {
+    padding: 100px 0 0;
+
+    .team-info-text {
+        max-width: 1103px;
+        margin: 0 auto;
+        text-align: center;
+
+        .sectionTitle {
+            font-family: 'Maximum Impact';
+            font-weight: 500;
+            background: linear-gradient(106.38deg, #FF9127 18.11%, #F45356 52.23%, #090D48 104.85%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        p {
+            font-family: 'Maximum Impact';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 77px;
+            margin-bottom: 40px;
+
+            @media(max-width:1399px) {
+                font-size: 30px;
+                line-height: 57px;
+            }
+
+            @media(max-width:767px) {
+                font-size: 30px;
+                line-height: 37px;
+            }
+
+        }
+    }
+
+    .shape {
+        position: relative;
+        bottom: -150px;
+        left: -50px;
+
+        @media(max-width:1199px) {
+            max-width: 400px;
+        }
+    }
+}
+
+// team-section
+
+.team-section {
+    padding: 280px 0 100px;
+    background: $bg-color2;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+
+    @media(max-width:767px) {
+        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
+        padding: 150px 0 80px;
+    }
+
+    .sectionTitle {
+        background: linear-gradient(106.38deg, #FF9127 18.11%, #F45356 52.23%, #090D48 104.85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .team-wrap {
+        .team-item {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px 60px;
+            background: $bg-color;
+
+            @media(max-width:1399px) {
+                padding: 30px 20px;
+            }
+
+            .team-img {
+                text-align: center;
+                overflow: hidden;
+                border-radius: 50%;
+                max-width: 293px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+
+                img {
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    transform: scale(1);
+                    transition: all .3s;
+                }
+            }
+
+            .team-text {
+                h2 {
+                    font-family: 'Maximum Impact';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 39px;
+                    line-height: 50px;
+                    background: linear-gradient(276.17deg, #F45356 0%, #FF9127 104.34%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+
+                span {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 21px;
+                    line-height: 32px;
+                    color: #FFFFFF;
+
+                    @media(max-width:1399px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            &:hover {
+                .team-img {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            &.gradient-bg {
+                background: linear-gradient(276.17deg, #F45356 0%, #FF9127 104.34%);
+                border-radius: 20px;
+
+                .team-text {
+                    h2 {
+                        color: $white;
+                        background: none;
+                        -webkit-text-fill-color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// oriented-section
+
+.oriented-section {
+    p {
+        font-family: 'Maximum Impact';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 75px;
+
+        @media(max-width:1199px) {
+            font-size: 30px;
+            line-height: 55px;
+        }
+
+        @media(max-width:767px) {
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+
+    .aboutBackground {
+        .inner {
+            @media(max-width:991px) {
+                padding: 50px 30px;
+            }
+        }
+
+        p {
+            font-family: 'Maximum Impact';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 32px;
+            max-width: 748px;
+            margin: 0 auto;
+        }
+    }
+}
+
+// blogSection
+
+.blogSection {
+    .blog-title {
+        text-align: left;
+        span {
+            font-family: 'Sofia Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        h2 {
+            font-family: 'Sofia Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 56px;
+
+            @media(max-width:767px){
+                font-size: 39px;
+                line-height: 46px;
+            }
+        }
+
+        p {
+            font-family: 'Sofia Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 27px;
+
+            @media(max-width:767px){
+                font-size: 21px;
+            }
+        }
+    }
+
+    .grid {
+        span {
+            font-family: 'Sofia Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 118%;
+        }
+
+        h3 {
+            font-family: 'Sofia Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 26px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-family: 'Sofia Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+        a {
+            font-family: 'Sofia Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}

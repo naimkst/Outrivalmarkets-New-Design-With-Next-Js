@@ -38,7 +38,7 @@ export const Navigation = () => {
             <li className="mb-8 group menuHoverGradientColor  text-black tablet:mb-4">
               <a
                 className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
-                href=""
+                href="/about"
               >
                 About
               </a>
