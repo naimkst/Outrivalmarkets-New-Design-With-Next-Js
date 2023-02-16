@@ -49,9 +49,20 @@ export const Navigation = () => {
             <li className="mb-8 group menuHoverGradientColor  text-black tablet:mb-4">
               <a
                 className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
-                href=""
+                href="/service"
               >
-                Project
+                Service
+              </a>
+              <p className="text-black text-center font-bold group-hover:text-primary">
+                A Glimpse Of The Magic We Do
+              </p>
+            </li>
+            <li className="mb-8 group menuHoverGradientColor  text-black tablet:mb-4">
+              <a
+                className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
+                href="/portfolio"
+              >
+                Portfolio
               </a>
               <p className="text-black text-center font-bold group-hover:text-primary">
                 A Glimpse Of The Magic We Do

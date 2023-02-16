@@ -8,7 +8,7 @@ import TeamInfo from './about-component/TeamInfo';
 import TeamMember from './about-component/TeamMember';
 
 
-const HomePage =() => {
+const AboutPage =() => {
     return(
         <div>
             <AboutHero/>
@@ -21,6 +21,6 @@ const HomePage =() => {
         </div>
     )
 };
-export default HomePage;
+export default AboutPage;
 
 
