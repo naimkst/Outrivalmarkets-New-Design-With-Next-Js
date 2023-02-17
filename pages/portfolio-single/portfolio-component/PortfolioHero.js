@@ -3,7 +3,7 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import arrow from '/public/assets/images/arrow.svg'
 
-const PortfolioHero = () => {
+const PortfolioHero = (props) => {
     return (
         <div className='hero-section portfolio-hero'>
             {/* Hero Section */}
@@ -21,10 +21,10 @@ const PortfolioHero = () => {
             <div className="h-[1220px] relative flex items-center justify-center heroSection phone:h-[100vh] phone:px-4">
                 <div className="z-50 relative text-center about-hero-text">
                     <p className="text88 text-white font-bold w-[100%] m-auto text-center tablet:w-full ">
-                        Don’t just take our word, see it in the pictures
+                        {props.dTitle}
                     </p>
+                    <span>Branding for Hermolis Band</span>
                     <div className="py-16 arrow-sec">
-                        <span>View Projects</span>
                         <AnchorLink className='arrow-btn' href='#portfolio'><span><Image src={arrow} alt="" /></span></AnchorLink>
                     </div>
                 </div>
