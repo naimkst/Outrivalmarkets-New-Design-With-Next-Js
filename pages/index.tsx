@@ -8,49 +8,56 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import Link from "next/link";
+import BlogSec from '../components/blog';
+import Oriented from '../components/Oriented/Oriented';
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <div className="absolute inset-0 flex justify-center z-50 top-2">
-        <div className="">
-          <img
-            className="w-[200px] phone:w-[120px]"
-            src="/assets/images/logo.png"
-            alt="logo"
-          />
-        </div>
-      </div>
-
-      {/* Our Philosophy: */}
-      <div className="h-[1220px] z-30 relative flex items-center justify-center heroSection phone:h-[100vh] phone:px-4">
-        <div className="z-50 relative text-center">
-          <p className="text88 text-white font-bold w-[100%] m-auto text-center tablet:w-full ">
-            UTLIZING <br /> “BUNKER-BUSTER” <br />
-            MARKETING METHODS <br />
-            TO DETONATE YOUR <br />
-            BRAND PRESENCE
-          </p>
-          <div className="py-16">
-            <button className="bg-white h-[70px] px-[45px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-              <p className="heroButtonGradient text24">{`Lets Explode “Dem Sales!”`}</p>
-            </button>
+      <div className='hero-section'>
+        {/* Hero Section */}
+        <div className="absolute inset-0 flex justify-center z-50 top-2 logo">
+          <div>
+            <img
+              className="w-[200px] phone:w-[120px]"
+              src="/assets/images/logo.png"
+              alt="logo"
+            />
           </div>
         </div>
 
-        <div className="absolute left-[7%] top-[5%] tablet:hidden">
-          <img src="/assets/images/bulb.png" alt="" />
+        {/* Our Philosophy: */}
+        <div className="h-[1220px] z-30 relative flex items-center justify-center heroSection phone:h-[100vh] phone:px-4">
+          <div className="z-50 relative text-center about-hero-text">
+            <p className="text88 text-white font-bold w-[100%] m-auto text-center tablet:w-full ">
+              UTLIZING “BUNKER-BUSTER”
+              MARKETING METHODS
+              TO DETONATE YOUR
+              BRAND PRESENCE
+            </p>
+            <div className="py-16">
+              <button className="bg-white h-[70px] px-[45px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
+                <span className="heroButtonGradient text24 button">{`Explode “Dem Sales!”`}</span>
+              </button>
+            </div>
+          </div>
+
+          <div className="absolute left-[7%] top-[5%] tablet:hidden">
+            <img src="/assets/images/bulb.png" alt="" />
+          </div>
         </div>
+
       </div>
 
+
       {/* Our Brand */}
-      <div className="container m-auto text-center py-14 w-[70%] phone:w-full phone:px-4">
+      <div className="container m-auto text-center py-14 w-[70%] phone:w-full phone:px-4 philosophy">
         <h2 className="sectionTitle text44">Our Philosophy:</h2>
         <p className="text64 font-bold">
-          We Make You Big Or We Go Home‛ Again, We Do ‚Uhum‛.. Outrival!
+          We Make You Big Or We Go Home‛
+          Again, We Do ‚Uhum‛.. Outrival!
         </p>
       </div>
 
@@ -64,7 +71,7 @@ export default function Home() {
             <p className="text40 font-bold text-black">
               How Is Your Brands Online Presence?
             </p>
-            <p className="text40 font-bold text-black py-10">
+            <p className="text40 font-bold text-black py-7">
               Does It Need A Boost?
             </p>
             <p className="text40 font-bold text-black">
@@ -89,7 +96,7 @@ export default function Home() {
       </div>
 
       {/* Testimonial section */}
-      <div className="relative container m-auto rounded-[20px] w-[80%] text-center -mt-[15%] z-50 tablet:w-full tablet:px-5 tablet:mt-10 phone:w-full phone:px-4">
+      <div className="relative container rounded-[20px] w-[80%] text-center -mt-[15%] z-50 tablet:w-full tablet:px-5 tablet:mt-10 phone:w-full phone:px-4">
         <div className="aboutBackground">
           <div className="py-[52px] px-[100px] phone:px-4 tablet:px-10">
             <p className="text64 font-bold text-white">
@@ -107,14 +114,13 @@ export default function Home() {
         </div>
       </div>
       {/* Video Section */}
-      <div className="pt-[200px] container m-auto text-center tablet:pt-12 tablet:px-10 phone:px-4 desktop:px-10">
-        <div>
+      <div className="pt-[200px] container m-auto text-center tablet:pt-12 tablet:px-10 phone:px-4 desktop:px-10 testimonial">
+        <div className="sec-title">
           <h2 className="sectionTitle text44 mb-8">
             WHAT OUR CLIENTS ARE SAYING ABOUT US
           </h2>
           <p className="text64 text-black font-bold w-[80%] m-auto text-center tablet:w-full tablet:px-5 phone:w-full phone:px-0">
-            Some Of Our Favorite Clients, Left Some Good Words For Us.. Kid You
-            Not, For A Good Reason!
+            Some Of Our Favorite Clients, That Left Some Good Words For Us.. Kid You Not, For A Good Reason!
           </p>
         </div>
 
@@ -155,16 +161,16 @@ export default function Home() {
             spaceBetween={50}
             slidesPerView={3}
           >
-            <SwiperSlide className="py-[40px] md:py-[90px]">
+            <SwiperSlide className="slide-item py-[40px] md:py-[90px]">
               <div className="rounded-[10px] px-8 py-10 content-center text-center testimonialHover group hover:cursor-pointer testimonialBg">
                 <img
                   src={"/assets/images/testimonial.png"}
-                  width={80}
-                  height={80}
+                  width={166}
+                  height={166}
                   className="rounded-full object-cover inline-block text-center"
                 />
 
-                <p className="text25 font-bold my-5">
+                <p className="text25 font-bold my-2">
                   <span>
                     <ImQuotesLeft className="left-0 mb-3" />
                   </span>
@@ -175,25 +181,25 @@ export default function Home() {
                   </span>
                 </p>
 
-                <p className="font-semibold text-[18px] leading-[31px]">
+                <h5 className="font-semibold text-[18px] leading-[31px]">
                   Alexander Brown
-                </p>
-                <p className="font-semibold text-[16px] leading-[31px]">
+                </h5>
+                <span className="font-semibold text-[16px] leading-[31px]">
                   CEO of Outrival
-                </p>
+                </span>
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="py-[40px] md:py-[90px]">
+            <SwiperSlide className="slide-item py-[40px] md:py-[90px]">
               <div className="rounded-[10px] px-8 py-10 content-center text-center testimonialHover group hover:cursor-pointer testimonialBg">
                 <img
                   src={"/assets/images/testimonial.png"}
-                  width={80}
-                  height={80}
+                  width={166}
+                  height={166}
                   className="rounded-full object-cover inline-block text-center"
                 />
 
-                <p className="text25 textColor font-bold my-5">
+                <p className="text25 textColor font-bold my-2">
                   <span>
                     <ImQuotesLeft className="left-0 mb-3" />
                   </span>
@@ -203,25 +209,25 @@ export default function Home() {
                     <ImQuotesRight className="inline-block" />
                   </span>
                 </p>
-                <p className="font-semibold text-[18px] leading-[31px]">
+                <h5 className="font-semibold text-[18px] leading-[31px]">
                   Alexander Brown
-                </p>
-                <p className="font-semibold text-[16px] leading-[31px]">
+                </h5>
+                <span className="font-semibold text-[16px] leading-[31px]">
                   CEO of Outrival
-                </p>
+                </span>
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="py-[40px] md:py-[90px]">
+            <SwiperSlide className="slide-item py-[40px] md:py-[90px]">
               <div className=" rounded-[10px] px-8 py-10 content-center text-center testimonialHover group hover:cursor-pointer testimonialBg">
                 <img
                   src={"/assets/images/testimonial.png"}
-                  width={80}
-                  height={80}
+                  width={166}
+                  height={166}
                   className="rounded-full object-cover inline-block text-center"
                 />
 
-                <p className="text25 font-bold my-5">
+                <p className="text25 font-bold my-2">
                   <span>
                     <ImQuotesLeft className="left-0 mb-3" />
                   </span>
@@ -231,25 +237,25 @@ export default function Home() {
                     <ImQuotesRight className="inline-block" />
                   </span>
                 </p>
-                <p className="font-semibold text-[18px] leading-[31px]">
+                <h5 className="font-semibold text-[18px] leading-[31px]">
                   Alexander Brown
-                </p>
-                <p className="font-semibold text-[16px] leading-[31px]">
+                </h5>
+                <span className="font-semibold text-[16px] leading-[31px]">
                   CEO of Outrival
-                </p>
+                </span>
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="py-[40px] md:py-[90px]">
+            <SwiperSlide className="slide-item py-[40px] md:py-[90px]">
               <div className=" rounded-[10px] px-8 py-10 content-center text-center testimonialHover group hover:cursor-pointer testimonialBg">
                 <img
                   src={"/assets/images/testimonial.png"}
-                  width={80}
-                  height={80}
+                  width={166}
+                  height={166}
                   className="rounded-full object-cover inline-block text-center"
                 />
 
-                <p className="text25 font-bold my-5">
+                <p className="text25 font-bold my-2">
                   <span>
                     <ImQuotesLeft className="left-0 mb-3" />
                   </span>
@@ -259,25 +265,25 @@ export default function Home() {
                     <ImQuotesRight className="inline-block" />
                   </span>
                 </p>
-                <p className="font-semibold text-[18px] leading-[31px]">
+                <h5 className="font-semibold text-[18px] leading-[31px]">
                   Alexander Brown
-                </p>
-                <p className="font-semibold text-[16px] leading-[31px]">
+                </h5>
+                <span className="font-semibold text-[16px] leading-[31px]">
                   CEO of Outrival
-                </p>
+                </span>
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="py-[40px] md:py-[90px]">
+            <SwiperSlide className="slide-item py-[40px] md:py-[90px]">
               <div className=" rounded-[10px] px-8 py-10 content-center text-center testimonialHover group hover:cursor-pointer testimonialBg">
                 <img
                   src={"/assets/images/testimonial.png"}
-                  width={80}
-                  height={80}
+                  width={166}
+                  height={166}
                   className="rounded-full object-cover inline-block text-center"
                 />
 
-                <p className="text25 font-bold my-5">
+                <p className="text25 font-bold my-2">
                   <span>
                     <ImQuotesLeft className="left-0 mb-3" />
                   </span>
@@ -287,12 +293,12 @@ export default function Home() {
                     <ImQuotesRight className="inline-block" />
                   </span>
                 </p>
-                <p className="font-semibold text-[18px] leading-[31px]">
+                <h5 className="font-semibold text-[18px] leading-[31px]">
                   Alexander Brown
-                </p>
-                <p className="font-semibold text-[16px] leading-[31px]">
+                </h5>
+                <span className="font-semibold text-[16px] leading-[31px]">
                   CEO of Outrival
-                </p>
+                </span>
               </div>
             </SwiperSlide>
           </Swiper>
@@ -301,19 +307,21 @@ export default function Home() {
 
       {/* Call To Action */}
       <div className="relative videoSection flex flex-col justify-center items-center text-center mt-[50px] overflow-hidden tablet:bg-[#fff6ef] phone:px-4 ">
-        <div className="absolute -left-20 top-[100px] z-50 tablet:hidden">
+        <div className="absolute line-shape -left-20 top-[100px] z-50 tablet:hidden">
           <img src="/assets/images/about-shape.png" alt="" />
         </div>
-        <div className="absolute -right-20 top-[200px] z-50 tablet:hidden">
+        <div className="absolute line-shape -right-20 top-[200px] z-50 tablet:hidden">
           <img src="/assets/images/video-shape.png" alt="" />
         </div>
         <div className="relative z-50 pt-[400px] pb-[350px] tablet:pt-12 tablet:pb-12">
           <div className="container m-auto text-center py-14 tablet:py-5">
-            <h2 className="sectionTitle text44 mb-5">
-              MUST WATCH EYE-OPENER TRUTH REVEALING VIDEO!!
+            <h2 className="sectionTitle text44 mb-3">
+              7 MUST READ VIGOROUS MARKETING TACTICS FOR 2023!!
             </h2>
-            <p className="text64 font-bold w-[100%] m-auto tablet:w-full tablet:px-5 phone:px-0">
-              Painfull Truth About Outrivaling On <br /> Social Media Platforms
+            <p className="para text64 font-bold w-[100%] m-auto tablet:w-full tablet:px-5 phone:px-0">
+              7 Awesome ‘non-rocket-science’
+              tips that marketing companies don’t want
+              you to know
             </p>
           </div>
           <div className="imageFull w-[80%] m-auto tablet:w-full tablet:px-5 phone:px-2 phone:w-full">
@@ -328,32 +336,33 @@ export default function Home() {
         </div>
       </div>
       {/* Coonet with us today */}
-      <div className="relative  container m-auto rounded-[20px] w-[80%] text-center -mt-[13%] z-50 tablet:w-full tablet:px-5 tablet:mt-12 tablet:overflow-hidden">
+      <div className="relative  container rounded-[20px] w-[80%] text-center -mt-[13%] z-50 tablet:w-full tablet:px-5 tablet:mt-12 tablet:overflow-hidden">
         <div className="aboutBackground">
           <div className="py-[52px] px-[100px] phone:px-4">
-            <p className="text64 font-bold text-white phone:text-[40px]">
+            <p className="para text-white phone:text-[40px]">
               Brand Awareness
             </p>
 
-            {/* <p className="text25 text-white w-[70%] m-auto py-[40px] phone:w-full phone:px-0 tablet:w-full tablet:px-0">
+            <p className="text25 text-white w-[70%] m-auto py-[20px] phone:w-full phone:px-0 tablet:w-full tablet:px-0">
               Consectetur eleifend a libero arcu tristique a urna tortor. Odio
               nulla dignissim fames in non.
-            </p> */}
-            <div className="">
-              <a
-                className="text44 underline font-bold text-white phone:text-[30px]"
-                href=""
-              >{`Let's GET REAL Hear`}</a>
+            </p>
+            <div className="pt-10">
+              <button className="bg-white h-[70px] px-[40px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
+                <p className="heroButtonGradient text24">
+                  {`Explode “Dem Sales!”`}
+                </p>
+              </button>
             </div>
           </div>
         </div>
       </div>
       {/* Video Section with background */}
-      <div className="flex flex-col justify-center items-center text-center mt-10 relative">
+      <div className="product-text flex flex-col justify-center items-center text-center mt-10 relative">
         {/* <div className="absolute left-0 top-0 z-50">
           <img src="/assets/images/about-shape.png" alt="" />
         </div> */}
-        <div className="relative z-50 pt-[100px] pb-[100px] tablet:pt-12 tablet:pb-12">
+        <div className="relative z-50 pt-[100px] pb-[0px] tablet:pt-12 tablet:pb-12">
           <div className=" w-[100%] m-auto tablet:w-full tablet:px-5">
             <p className="text40 font-bold text-black">
               Great products.. im sure..
@@ -377,7 +386,7 @@ export default function Home() {
 
           <div className="py-10">
             <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-              <p className="text-white">{`Let's connect today!`}</p>
+              <span className="text-white">{`Let's connect today!`}</span>
             </button>
           </div>
         </div>
@@ -387,7 +396,7 @@ export default function Home() {
       <div className="h-[726px] brandSection tablet:h-[550px]"></div>
 
       {/* get in touch today  */}
-      <div className="relative overflow-hidden py-[60px] tablet:pb-12">
+      <div className="relative overflow-hidden py-[60px] tablet:pb-12 marketing">
         <div className="container">
           <div className="grid grid-cols-7 items-center justify-between tablet:grid-cols-1">
             <div className="tablet:text-center col-span-3">
@@ -401,16 +410,16 @@ export default function Home() {
               <h2 className="sectionTitle text44">
                 7 MUST READ VIGOROUS MARKETING TACTICS FOR 2023!!
               </h2>
-              <p className="text64 text-black font-bold py-8 phone:text-[30px]">
+              <p className="text64 text-black font-bold py-3 phone:text-[30px]">
                 {`7 Awesome`} <br />
-                {`‘non-rocket-science’ tips`} <br />
+                {`‘non-rocket- science’ tips`} <br />
                 {`that marketing companies`} <br />
                 {`don’t want`} <br />
                 {`you to know`}
               </p>
-              <div className="pt-5">
+              <div className="">
                 <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[45px]">
-                  <p className="text-white">{`Download here`}</p>
+                  <span className="text-white">{`Download here`}</span>
                 </button>
               </div>
             </div>
@@ -422,16 +431,16 @@ export default function Home() {
       </div>
 
       {/* marketing struture section */}
-      <div className="relative py-[120px] bg-[#090D48]">
+      <div className="relative py-[120px] bg-[#090D48] business-sec">
         <div className="w-[100%] m-auto text-center tablet:w-full tablet:px-5">
           <p className="text40 font-bold text-white">
             {`Business is regular, has been the same for many years..`}
           </p>
-          <p className="text40 font-bold text-white py-10">
+          <p className="text40 font-bold text-white py-2">
             {`No extra oomph..`}
           </p>
 
-          <p className="text40 font-bold text-white pb-10">
+          <p className="text40 font-bold text-white pb-2">
             {`Kinda good, but actually not.. `}
           </p>
 
@@ -452,7 +461,7 @@ export default function Home() {
 
           <div className="pt-16">
             <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-              <p className="text-white">{`Let’s Get In Touch Today`}</p>
+              <span className="text-white">{`Let’s Get In Touch Today`}</span>
             </button>
           </div>
         </div>
@@ -463,8 +472,8 @@ export default function Home() {
       </div>
 
       {/* our process section */}
-      <div className="relative py-[100px]">
-        <div className="w-[70%] m-auto text-center tablet:w-full tablet:px-5 phone:px-4">
+      <div className="relative py-[100px] creative">
+        <div className="w-[70%] m-auto text-center tablet:w-full tablet:px-5 phone:px-4 creative-inner">
           <p className="text40 font-bold mb-8">
             Here At Outrival Markets We Are A Team Of Creative Minds, Who Will
             Turn Your Idea Into A Brilliant Reality...
@@ -477,19 +486,19 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="absolute right-0 top-[5%] z-50 tablet:hidden">
+        <div className="absolute line-shape right-0 top-[5%] z-50 tablet:hidden">
           <img src="/assets/images/bulb-color.png" alt="" />
         </div>
-        <div className="absolute left-0 bottom-[5%] z-50">
+        <div className="absolute line-shape left-0 bottom-[5%] z-50">
           <img src="/assets/images/singleShap.png" alt="" />
         </div>
-        <div className="absolute right-0 top-[15%] z-50">
+        <div className="absolute line-shape right-0 top-[15%] z-50">
           <img src="/assets/images/singleShap02.png" alt="" />
         </div>
       </div>
 
       {/* Grouth section */}
-      <div className="bg-[#090D48] py-[100px] relative">
+      <div className="bg-[#090D48] py-[100px] relative process-sec">
         <div className="absolute left-0 top-1/2 tablet:hidden">
           <img src="/assets/images/processShap01.png" alt="" />
         </div>
@@ -506,7 +515,7 @@ export default function Home() {
               <div className="grid grid-cols-2 text-center justify-between items-center tablet:grid-cols-1">
                 <div className="span-1 text-center relative tablet:order-last">
                   <div className="borderProcessRight max-w-[400px] m-auto">
-                    <h2 className="processTitle py-3">Initial Meeting</h2>
+                    <h2 className="processTitle py-2">Initial Meeting</h2>
                     <p className="text32 font-[500] text-white">
                       Initial meeting: 30 min. meeting with a “been-there
                       done-that” marketing strategist, who will understand and
@@ -580,128 +589,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Oriented />
+      <BlogSec />
 
-      <div className="relative py-[100px] phone:py-[50px]">
-        <div className="w-[50%] m-auto text-center tablet:w-full tablet:px-5 phone:w-full phone:px-4">
-          <h2 className="sectionTitle text44">Growth oriented?</h2>
-          <p className="text40 font-bold mb-8">
-            A Click here to schedule your free 30 min kick-off meeting ($650
-            Value)
-          </p>
-
-          <div className="pt-3">
-            <button className="videoButtonGradient h-[70px] w-auto px-[40px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-              <p className="text-white">Yes, book me in for a 30 min session</p>
-            </button>
-          </div>
-        </div>
-
-        <div className="absolute left-0 bottom-0 z-50 phone:hidden">
-          <img src="/assets/images/grothShap.png" alt="" />
-        </div>
-      </div>
-
-      <div className="relative container m-auto rounded-[20px] w-[80%] text-center z-50 my-20 phone:w-full phone:px-4 phone:my-5">
-        <div className="aboutBackground">
-          <div className="py-[52px] px-[100px] tablet:px-5 phone:px-4">
-            <p className="text25 font-bold text-white w-[70%] m-auto py-[40px] tablet:w-full tablet:px-5 phone:w-full phone:px-0">
-              Outrival markets is Montreal based company that offers marketing
-              services for brands looking to grow revenue and popularity. We
-              thrive to turn good value brands into highly sought after niche
-              movers & shakers! Not convinced yet?
-            </p>
-            <div className="">
-              <button className="bg-white h-[70px] w-auto px-[40px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-                <p className="heroButtonGradient">
-                  See our recent brand success stories
-                </p>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="blogSection pt-[100px] md:pb-[140px] pb-[60px] bg-auto md:px-0 px-10 mt-[150px] overflow-x-hidden tablet:px-5 tablet:text-center phone:my-12">
-        <div className="absolute -right-[200px] bottom-0 z-50">
-          <img src="/assets/images/video-shape.png" alt="" />
-        </div>
-        <div className="m-auto max-w-[1307px] container z-50">
-          <div>
-            <div>
-              <p className="text-[18px] leading-[28px] font-[600] text-white">
-                Our Blog
-              </p>
-              <h2 className="md:text-[42px] text-[35px] md:leading-[52px] leading-[40px] font-bold text-white py-5">
-                Some of our recent <br />
-                blog posts
-              </h2>
-              <p className="text-[22px] leading-[32px] text-white">
-                Subscribe to get our latest tips on how to totally conqueror
-                your <br /> market, and moreover to outrival it!
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 phone:grid-cols-1 gap-8 mt-16 tablet:grid-cols-1 tablet:text-left">
-              <div className="bg-[#FAFAFA] rounded-[7px] p-8 grid md:grid-cols-2 grid-cols-1 items-center justify-start gap-3">
-                <div className="imageFull">
-                  <Image
-                    className="imgHover"
-                    src="/assets/images/blog02.png"
-                    alt="Blog Image"
-                    fill
-                  />
-                </div>
-                <div>
-                  <p className="text-[16px] leading-[118%] text-[#5F5F5F]">
-                    05 Aplil 2021
-                  </p>
-                  <h3 className="text-[26px] leading-[30px] font-bold text-[#090D48] my-2">
-                    Duis vel tincidunt lectus maurisenim.
-                  </h3>
-                  <p className="text-[#303030] text-[18px] leading-[26px] mb-4">
-                    Donec fringlla est ametdis quam quam dictum vitae enim nulla
-                    falis Donec quam fringilla Donec fringilla quam.
-                  </p>
-                  <a className="text-[#EC615B] hover:text-[#303030] text-[18px] font-bold">
-                    Read More
-                  </a>
-                </div>
-              </div>
-              <div className="bg-[#FAFAFA] rounded-[7px] p-8 grid md:grid-cols-2 grid-cols-1 items-center justify-start gap-3">
-                <div className="imageFull">
-                  <Image
-                    className="imgHover"
-                    src="/assets/images/blog01.jpg"
-                    alt="Blog Image"
-                    fill
-                  />
-                </div>
-                <div>
-                  <p className="text-[16px] leading-[118%] text-[#5F5F5F]">
-                    05 Aplil 2021
-                  </p>
-                  <h3 className="text-[26px] leading-[30px] font-bold text-[#090D48] my-2">
-                    Duis vel tincidunt lectus maurisenim.
-                  </h3>
-                  <p className="text-[#303030] text-[18px] leading-[26px] mb-4">
-                    Donec fringlla est ametdis quam quam dictum vitae enim nulla
-                    falis Donec quam fringilla Donec fringilla quam.
-                  </p>
-                  <a className="text-[#EC615B] hover:text-[#303030] text-[18px] font-bold">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-20 text-center">
-            <a className="bg-white py-[20px] px-[70px] text-[18px] text-[#FF8B2D] font-bold rounded-[7px] hover:bg-[#090D48] hover:text-white">
-              See More
-            </a>
-          </div>
-        </div>
-      </div>
     </>
   );
 }

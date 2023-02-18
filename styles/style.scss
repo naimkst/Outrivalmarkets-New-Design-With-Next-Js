@@ -13,6 +13,7 @@ $theme-primary-color: #FF8B2D;
     overflow: hidden;
 }
 
+
 .theme-btn {
     display: inline-block;
     color: $white;
@@ -50,7 +51,67 @@ button {
     }
 }
 
+.hamburger {
+    @media(max-width:767px) {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        border-radius: 50%;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        svg {
+            max-width: 25px;
+        }
+    }
+}
+
+.mobail-menu {
+    li {
+        a {
+            color: #000;
+            transition: all .3s;
+        }
+    }
+
+    @media(max-width:767px) {
+        ul {
+            display: block;
+            text-align: center;
+
+            li {
+                line-height: 1;
+                margin-bottom: 10px;
+
+                a {
+                    font-size: 20px;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
 .hero-section {
+    z-index: 1;
+
+    .logo {
+        @media(max-width:767px) {
+            left: 0;
+            justify-content: flex-start;
+            padding-left: 20px;
+        }
+    }
+
     .about-hero-text {
         max-width: 1120px;
         margin: 0 auto;
@@ -71,6 +132,253 @@ button {
                 line-height: unset;
             }
         }
+    }
+}
+
+// philosophy
+
+.philosophy {
+    max-width: 1103px;
+
+    p {
+        font-family: 'Maximum Impact';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 88px;
+        color: #000000;
+
+        @media(max-width:767px) {
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 65px;
+        }
+    }
+}
+
+.aboutSection {
+    p {
+        font-family: 'Maximum Impact';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 77px;
+        color: #000000;
+
+        @media(max-width:767px) {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+}
+
+.aboutBackground {
+    p.para {
+        font-family: 'Maximum Impact';
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 88px;
+
+        @media(max-width:767px) {
+            font-size: 42px;
+            line-height: 29px;
+        }
+    }
+}
+
+.testimonial {
+    .sec-title {
+        h2 {
+            font-family: 'Maximum Impact';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 44px;
+            line-height: 68px;
+            background: linear-gradient(106.38deg, #FF9127 18.11%, #F45356 52.23%, #090D48 104.85%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+
+            @media(max-width:767px) {
+                font-size: 32px;
+                line-height: 56px;
+            }
+        }
+
+        p {
+            font-family: 'Maximum Impact';
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 88px;
+            color: #000000;
+
+            @media(max-width:767px) {
+                font-size: 45px;
+                line-height: 65px;
+            }
+
+        }
+    }
+
+    .slide-item {
+        p {
+            font-family: 'Maximum Impact';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 32px;
+        }
+
+        h5 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 32px;
+            color: #FFFFFF;
+            opacity: 0.8;
+            margin-bottom: 0;
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 32px;
+            text-align: center;
+            color: #FFFFFF;
+            opacity: 0.8;
+        }
+    }
+
+    .swiper-pagination {
+        @media(max-width:767px) {
+            bottom: 0;
+        }
+    }
+}
+
+.videoSection {
+    p.para {
+        font-family: 'Maximum Impact';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 88px;
+        color: #000000;
+        max-width: 1033px;
+
+        @media(max-width:767px) {
+            font-size: 45px;
+            line-height: 65px;
+        }
+    }
+}
+
+.product-text {
+    p {
+        font-family: 'Maximum Impact';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 77px;
+
+        @media(max-width:767px) {
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+}
+
+.marketing {
+    p {
+        font-family: 'Maximum Impact';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 88px;
+
+        @media(max-width:767px) {
+            font-size: 45px;
+            line-height: 65px;
+        }
+    }
+}
+
+.business-sec {
+    p {
+        font-family: 'Maximum Impact';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 77px;
+
+        @media(max-width:767px) {
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+}
+
+.creative {
+    .creative-inner {
+        max-width: 1103px;
+        margin: auto;
+    }
+
+    p {
+        font-family: 'Maximum Impact';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 77px;
+
+        @media(max-width:767px) {
+            font-size: 30px;
+            line-height: 37px;
+        }
+
+    }
+}
+
+.process-sec {
+    .processTitle {
+        font-family: 'Maximum Impact';
+        font-weight: 500;
+        font-size: 39px;
+        line-height: 77px;
+    }
+
+    p {
+        font-family: 'Maximum Impact';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 34px;
+
+        @media(max-width:767px) {
+            font-size: 25px;
+            line-height: 34px;
+        }
+    }
+}
+
+.line-shape {
+    @media(max-width:991px) {
+        display: none;
+    }
+}
+
+.brandSection::before {
+    @media(max-width:767px) {
+        clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+.videoSection {
+    @media(max-width:767px) {
+        padding-top: 50px;
+        display: block;
+        clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
     }
 }
 
@@ -138,6 +446,11 @@ button {
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 text-fill-color: transparent;
+
+                @media(max-width:767px) {
+                    font-size: 45px;
+                    line-height: 65px;
+                }
             }
         }
 
@@ -469,6 +782,12 @@ button {
             font-weight: 700;
             font-size: 18px;
             line-height: 26px;
+        }
+
+        .blog-item{
+            @media(max-width:1199px) {
+                display: block;
+            }
         }
     }
 }
@@ -969,7 +1288,7 @@ button {
             height: 125px;
         }
 
-        span{
+        span {
             margin-bottom: 0;
         }
 

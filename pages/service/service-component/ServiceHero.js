@@ -5,7 +5,7 @@ const ServiceHero = () => {
     return (
         <div className='hero-section service-hero'>
             {/* Hero Section */}
-            <div className="absolute inset-0 flex justify-center z-50 top-2">
+            <div className="absolute inset-0 flex justify-center z-50 top-2 logo">
                 <div className="">
                     <img
                         className="w-[200px] phone:w-[120px]"

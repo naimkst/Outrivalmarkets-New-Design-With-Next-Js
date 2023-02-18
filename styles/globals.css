@@ -127,8 +127,9 @@ a{
   background-clip: text;
   text-fill-color: transparent;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
+  font-family: 'Maximum Impact';
 }
 .aboutSection {
   position: relative;
@@ -435,6 +436,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     font-size: 35px;
     line-height: 60px;
     text-transform: uppercase;
+    font-family: 'Maximum Impact';
   }
   .blogSection::before {
     content: "";
