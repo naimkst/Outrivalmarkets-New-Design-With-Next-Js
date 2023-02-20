@@ -118,9 +118,11 @@ button {
 
         p {
             text-transform: uppercase;
+            font-family: 'Maximum Impact';
+            font-weight: 500;
 
             @media(max-width:767px) {
-                font-size: 42px;
+                font-size: 43px;
                 line-height: 62px;
             }
         }
@@ -148,6 +150,12 @@ button {
         line-height: 88px;
         color: #000000;
 
+        @media(max-width:1199px) {
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 65px;
+        }
+
         @media(max-width:767px) {
             font-weight: 500;
             font-size: 45px;
@@ -156,7 +164,29 @@ button {
     }
 }
 
+.about-wrap {
+    margin-top: -250px;
+
+    @media(max-width:768px) {
+        margin-top: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+
+        .aboutBackground {
+            border-radius: 0;
+        }
+    }
+}
+
 .aboutSection {
+
+    &:before {
+        @media(max-width:1199px) {
+            clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+
     p {
         font-family: 'Maximum Impact';
         font-style: normal;
@@ -174,6 +204,16 @@ button {
 }
 
 .aboutBackground {
+    p.parag {
+        @media(max-width:1199px) {
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 56px;
+            font-family: 'Maximum Impact';
+            font-weight: 500;
+        }
+    }
+
     p.para {
         font-family: 'Maximum Impact';
         font-weight: 500;
@@ -213,6 +253,10 @@ button {
             font-size: 64px;
             line-height: 88px;
             color: #000000;
+
+            @media(max-width:1199px) {
+                font-size: 55px;
+            }
 
             @media(max-width:767px) {
                 font-size: 45px;
@@ -298,9 +342,21 @@ button {
         font-size: 64px;
         line-height: 88px;
 
+        @media(max-width:1199px) {
+            font-size: 50px;
+            line-height: 68px;
+        }
+
         @media(max-width:767px) {
             font-size: 45px;
             line-height: 65px;
+        }
+    }
+
+    .grid {
+        @media(max-width:991px) {
+            display: block;
+            text-align: center;
         }
     }
 }
@@ -347,6 +403,10 @@ button {
         font-weight: 500;
         font-size: 39px;
         line-height: 77px;
+
+        @media(max-width:1199px) {
+            line-height: 56px;
+        }
     }
 
     p {
@@ -355,15 +415,42 @@ button {
         font-size: 32px;
         line-height: 34px;
 
+        @media(max-width:1199px) {
+            font-size: 25px;
+            line-height: 34px;
+        }
+
         @media(max-width:767px) {
             font-size: 25px;
             line-height: 34px;
         }
     }
+
+    .borderProcessRight,
+    .borderThree {
+        @media(max-width:1199px) {
+            padding-right: 50px;
+        }
+
+        @media(max-width:768px) {
+            padding-right: 0px;
+        }
+    }
+
+    .borderProcessLeft,
+    .fourStyle {
+        @media(max-width:1199px) {
+            padding-left: 50px;
+        }
+
+        @media(max-width:768px) {
+            padding-left: 0px;
+        }
+    }
 }
 
 .line-shape {
-    @media(max-width:991px) {
+    @media(max-width:1199px) {
         display: none;
     }
 }
@@ -577,7 +664,7 @@ button {
     background: $bg-color2;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 
-    @media(max-width:767px) {
+    @media(max-width:768px) {
         clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
         padding: 150px 0 80px;
     }
@@ -784,7 +871,7 @@ button {
             line-height: 26px;
         }
 
-        .blog-item{
+        .blog-item {
             @media(max-width:1199px) {
                 display: block;
             }

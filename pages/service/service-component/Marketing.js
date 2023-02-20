@@ -16,9 +16,9 @@ const Marketing = () => {
                                 <div className="web-creation-img d-block d-lg-none">
                                     <Image src={cImg} alt="" />
                                 </div>
-                                <p>We know that creating a website and designing some graphics is only half the battle. That's why we also offer marketing strategizing to combine all of our services and set forth a compelling marketing strategy that will make you the talk of the town."</p>
+                                <p>{`We know that creating a website and designing some graphics is only half the battle. That's why we also offer marketing strategizing to combine all of our services and set forth a compelling marketing strategy that will make you the talk of the town.`}</p>
                                 <p>All over the place with marketing.. not sure how to set your marketing footprint for 2023? Lets talk about it and see how we can help.</p>
-                                <p>"Ready to be the next big thing? Let's talk.</p>
+                                <p>{`"Ready to be the next big thing? Let's talk.`}</p>
                                 <Link href="/" className="theme-btn mt-4 videoButtonGradient bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">Contact Us</Link>
                             </div>
                         </div>

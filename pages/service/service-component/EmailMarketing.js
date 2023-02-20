@@ -16,8 +16,8 @@ const EmailMarketing = () => {
                                 <div className="web-creation-img d-block d-lg-none">
                                     <Image src={cImg} alt="" />
                                 </div>
-                                <p>Want to drive sales and build customer relationships? Our team specializes in developing and sending email campaigns that are tailored to your audience and designed to promote your products or services."</p>
-                                <p>Don't believe us?</p>
+                                <p>Want to drive sales and build customer relationships? Our team specializes in developing and sending email campaigns that are tailored to your audience and designed to promote your products or services.</p>
+                                <p>{`Don't believe us?`}</p>
                                 <Link href="/" className="theme-btn mt-4 videoButtonGradient bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">See our portfolio</Link>
                             </div>
                         </div>

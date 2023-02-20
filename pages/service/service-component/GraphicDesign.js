@@ -22,9 +22,9 @@ const GraphicDesign = () => {
                                 <div className="web-creation-img d-block d-lg-none">
                                     <Image src={cImg} alt="" />
                                 </div>
-                                <p>Your branding and design should be just as unique as your product or service. That's why we offer graphics services such as branding, brochures, logos, catalog design, product packaging design, product renderings, product videos, and brand videos."</p>
+                                <p>{`Your branding and design should be just as unique as your product or service. That's why we offer graphics services such as branding, brochures, logos, catalog design, product packaging design, product renderings, product videos, and brand videos."`}</p>
                                 <p>Getting lost? All over the place?</p>
-                                <p>"Our design team is here to make sure your customers can't resist your products. </p>
+                                <p>{`Our design team is here to make sure your customers can't resist your products.`}</p>
                                 <Link href="/" className="theme-btn mt-4 videoButtonGradient bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">See our portfolio</Link>
                             </div>
                         </div>

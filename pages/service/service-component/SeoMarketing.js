@@ -21,7 +21,7 @@ const SeoMarketing = () => {
                                 <div className="web-creation-img d-block d-lg-none">
                                     <Image src={cImg} alt="" />
                                 </div>
-                                <p>Want to make sure your website is showing up at the top of search engine results? Our team specializes in setting up SEO that will put you on top. From keyword research to meta tags, we'll make sure your website is optimized for success."</p>
+                                <p>{`Want to make sure your website is showing up at the top of search engine results? Our team specializes in setting up SEO that will put you on top. From keyword research to meta tags, we'll make sure your website is optimized for success." `}</p>
                                 <p>Compelling copy is our passion, making it intriguing and finger-clicking.. wait until we implement that with SEO to really rank you up the list organically!</p>
                             </div>
                         </div>

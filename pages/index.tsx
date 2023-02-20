@@ -96,18 +96,18 @@ export default function Home() {
       </div>
 
       {/* Testimonial section */}
-      <div className="relative container rounded-[20px] w-[80%] text-center -mt-[15%] z-50 tablet:w-full tablet:px-5 tablet:mt-10 phone:w-full phone:px-4">
+      <div className="about-wrap relative container rounded-[20px] w-[80%] text-center z-50 tablet:w-full tablet:px-5 tablet:mt-10 phone:w-full phone:px-4">
         <div className="aboutBackground">
           <div className="py-[52px] px-[100px] phone:px-4 tablet:px-10">
-            <p className="text64 font-bold text-white">
+            <p className="text64 font-bold text-white parag">
               Hey! You Are At The Right Spot.. Lets Work Together & Explode Your
               Sales – Bazooka Style!!
             </p>
             <div className="pt-10">
               <button className="bg-white h-[70px] px-[40px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-                <p className="heroButtonGradient text24">
+                <span className="heroButtonGradient text24">
                   {`Ready to learn how?!”`}
-                </p>
+                </span>
               </button>
             </div>
           </div>
@@ -424,7 +424,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="absolute right-0 bottom-[5%] tablet:hidden">
+          <div className="absolute right-0 bottom-[5%] tablet:hidden line-shape">
             <img src="/assets/images/book-bg.png" alt="" />
           </div>
         </div>
@@ -466,7 +466,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute -left-[200px] bottom-[100px] z-50 tablet:hidden">
+        <div className="absolute -left-[200px] bottom-[100px] z-50 tablet:hidden line-shape">
           <img src="/assets/images/about-shape.png" alt="" />
         </div>
       </div>
@@ -505,7 +505,7 @@ export default function Home() {
         <div className="absolute right-0 top-1/4 tablet:hidden">
           <img src="/assets/images/processShap02.png" alt="" />
         </div>
-        <div className="absolute right-0 bottom-[10%] phone:hidden">
+        <div className="absolute right-0 bottom-[10%] phone:hidden line-shape">
           <img src="/assets/images/processShap03.png" alt="" />
         </div>
         <div className="m-auto container text-center">
