@@ -19,7 +19,7 @@ const AboutHero = () => {
             <div className="h-[1220px] z-30 relative flex items-center justify-center heroSection phone:h-[100vh] phone:px-4">
                 <div className="z-50 relative text-center about-hero-text">
                     <p className="text88 text-white font-bold w-[100%] m-auto text-center tablet:w-full ">
-                        Yo, Welcome to Outrival Markets, where we're all about taking your brand to new heights
+                        {`Yo, Welcome to Outrival Markets, where we're all about taking your brand to new heights`}
                     </p>
                     <div className="py-16">
                         <button className="bg-white h-[70px] px-[45px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
