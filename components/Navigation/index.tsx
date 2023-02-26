@@ -24,9 +24,9 @@ export const Navigation = () => {
       {isOpen && (
         <div className="h-[100vh] bg-white/80 fixed top-0 z-[60] w-full backdrop-blur-md mobail-menu">
           <ul className="flex items-center justify-center flex-col h-full">
-            <li className="mb-8 group menuHoverGradientColor  text-black tablet:mb-4">
+            <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
               <Link onClick={() => setIsOpen(false) }
-                className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
+                className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/"
               >
                 Home
@@ -35,17 +35,17 @@ export const Navigation = () => {
                 Our Home Sweet Home
               </p>
             </li>
-            <li className="mb-8 group menuHoverGradientColor  text-black tablet:mb-4">
-              <Link onClick={() => setIsOpen(false) } href="/about" className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]">
+            <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
+              <Link onClick={() => setIsOpen(false) } href="/about" className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]">
                   About
               </Link>
               <p className="text-black text-center font-bold group-hover:text-primary">
                 Insights On Who We Are
               </p>
             </li>
-            <li className="mb-8 group menuHoverGradientColor  text-black tablet:mb-4">
+            <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
               <Link onClick={() => setIsOpen(false) }
-                className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
+                className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/service"
               >
                 Service
@@ -54,9 +54,9 @@ export const Navigation = () => {
                 A Glimpse Of The Magic We Do
               </p>
             </li>
-            <li className="mb-8 group menuHoverGradientColor  text-black tablet:mb-4">
+            <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
               <Link onClick={() => setIsOpen(false) }
-                className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
+                className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/portfolio"
               >
                 Portfolio
@@ -65,10 +65,21 @@ export const Navigation = () => {
                 A Glimpse Of The Magic We Do
               </p>
             </li>
-            <li className="mb-8 group menuHoverGradientColor  text-black tablet:mb-4">
+            <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
               <Link onClick={() => setIsOpen(false) }
-                className="text-[88px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
+                className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href=""
+              >
+                Latest Blog
+              </Link>
+              <p className="text-black text-center font-bold group-hover:text-primary">
+                Hey Y’never Know! Let’s Hear From You
+              </p>
+            </li>
+            <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
+              <Link onClick={() => setIsOpen(false) }
+                className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
+                href="/contact"
               >
                 Contact Us
               </Link>

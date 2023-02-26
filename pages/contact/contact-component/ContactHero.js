@@ -1,9 +1,11 @@
+import Image from 'next/image';
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import arrow from '/public/assets/images/arrow.svg'
 
-
-const ServiceHero = () => {
+const ContactHero = () => {
     return (
-        <div className='hero-section service-hero'>
+        <div className='hero-section portfolio-hero'>
             {/* Hero Section */}
             <div className="absolute inset-0 flex justify-center z-50 top-2 logo">
                 <div className="">
@@ -16,18 +18,14 @@ const ServiceHero = () => {
             </div>
 
             {/* Our Philosophy: */}
-            <div className="h-[1220px] z-30 relative flex items-center justify-center heroSection phone:h-[100vh] phone:px-4">
+            <div className="h-[1220px] relative flex items-center justify-center heroSection phone:h-[100vh] phone:px-4">
                 <div className="z-50 relative text-center about-hero-text">
                     <p className="text88 text-white font-bold w-[100%] m-auto text-center tablet:w-full ">
-                        ARE YOU READY TO OUTRIVAL THE COMPETITION
+                        Contact Us
                     </p>
-                    <ul>
-                        <li>Time to level up! mister and misses business owner, marketing director…</li>
-                    </ul>
-                    <div className="py-3">
-                        <button className="bg-white h-[70px] px-[45px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-                            <span className="heroButtonGradient text24 button">{`Explode “Dem Sales!”`}</span>
-                        </button>
+                    <div className="py-16 arrow-sec">
+                        <span>Contact</span>
+                        <AnchorLink className='arrow-btn' href='#contact'><span><Image src={arrow} alt="" /></span></AnchorLink>
                     </div>
                 </div>
 
@@ -39,5 +37,5 @@ const ServiceHero = () => {
         </div>
     )
 };
-export default ServiceHero;
+export default ContactHero;
 

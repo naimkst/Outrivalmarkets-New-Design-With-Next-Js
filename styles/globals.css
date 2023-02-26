@@ -51,6 +51,11 @@ a{
   text-decoration: none!important;
 }
 
+.heroSection{
+  height: 100vh;
+  min-height: 900px;
+}
+
 @media(max-width:767px) {
     .heroSection{
       min-height: 1020px;
@@ -136,6 +141,7 @@ a{
   height: 100%;
 }
 .aboutBackground {
+  position: relative;
   background: linear-gradient(
     106.38deg,
     #ff9127 18.11%,
@@ -288,7 +294,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       ),
       url("/assets/images/brand.jpg");
 
-    clip-path: polygon(0 39%, 100% 0%, 100% 100%, 0% 100%);
+    /* clip-path: polygon(0 39%, 100% 0%, 100% 100%, 0% 100%); */
+    clip-path: polygon(0 31%, 100% 0, 100% 65%, 0 96%);
     position: absolute;
     background-size: cover;
     top: 0;

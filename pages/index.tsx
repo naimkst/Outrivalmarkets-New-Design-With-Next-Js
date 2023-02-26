@@ -313,16 +313,11 @@ export default function Home() {
         <div className="absolute line-shape -right-20 top-[200px] z-50 tablet:hidden">
           <img src="/assets/images/video-shape.png" alt="" />
         </div>
-        <div className="relative z-50 pt-[400px] pb-[350px] tablet:pt-12 tablet:pb-12">
+        <div className="relative z-50 pt-[350px] pb-[100px] tablet:pt-12 tablet:pb-12">
           <div className="container m-auto text-center py-14 tablet:py-5">
             <h2 className="sectionTitle text44 mb-3">
               7 MUST READ VIGOROUS MARKETING TACTICS FOR 2023!!
             </h2>
-            <p className="para text64 font-bold w-[100%] m-auto tablet:w-full tablet:px-5 phone:px-0">
-              7 Awesome ‘non-rocket-science’
-              tips that marketing companies don’t want
-              you to know
-            </p>
           </div>
           <div className="imageFull w-[80%] m-auto tablet:w-full tablet:px-5 phone:px-2 phone:w-full">
             <Image src={"/assets/images/video.png"} alt="Video Image" fill />
@@ -336,27 +331,6 @@ export default function Home() {
         </div>
       </div>
       {/* Coonet with us today */}
-      <div className="relative  container rounded-[20px] w-[80%] text-center -mt-[13%] z-50 tablet:w-full tablet:px-5 tablet:mt-12 tablet:overflow-hidden">
-        <div className="aboutBackground">
-          <div className="py-[52px] px-[100px] phone:px-4">
-            <p className="para text-white phone:text-[40px]">
-              Brand Awareness
-            </p>
-
-            <p className="text25 text-white w-[70%] m-auto py-[20px] phone:w-full phone:px-0 tablet:w-full tablet:px-0">
-              Consectetur eleifend a libero arcu tristique a urna tortor. Odio
-              nulla dignissim fames in non.
-            </p>
-            <div className="pt-10">
-              <button className="bg-white h-[70px] px-[40px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-                <p className="heroButtonGradient text24">
-                  {`Explode “Dem Sales!”`}
-                </p>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
       {/* Video Section with background */}
       <div className="product-text flex flex-col justify-center items-center text-center mt-10 relative">
         {/* <div className="absolute left-0 top-0 z-50">
@@ -430,6 +404,28 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="brand-sec relative  container rounded-[20px] w-[80%] text-center z-50 tablet:w-full tablet:px-5 tablet:mt-12 tablet:overflow-hidden">
+        <div className="aboutBackground">
+          <div className="py-[52px] px-[100px] phone:px-4">
+            <p className="para text-white phone:text-[40px]">
+              Brand Awareness
+            </p>
+
+            <p className="text25 text-white w-[70%] m-auto py-[20px] phone:w-full phone:px-0 tablet:w-full tablet:px-0">
+              Consectetur eleifend a libero arcu tristique a urna tortor. Odio
+              nulla dignissim fames in non.
+            </p>
+            <div className="pt-10">
+              <button className="bg-white h-[70px] px-[40px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
+                <p className="heroButtonGradient text24">
+                  {`Explode “Dem Sales!”`}
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* marketing struture section */}
       <div className="relative py-[120px] bg-[#090D48] business-sec">
         <div className="w-[100%] m-auto text-center tablet:w-full tablet:px-5">
@@ -484,6 +480,9 @@ export default function Home() {
             And Anxieties (Oh No, We Are Not Therapists, But If It's Anything
             Marketing... ) We Can Surely Help Out!`}
           </p>
+          <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[45px]">
+            <span className="text-white">{`Get In Touch`}</span>
+          </button>
         </div>
 
         <div className="absolute line-shape right-0 top-[5%] z-50 tablet:hidden">

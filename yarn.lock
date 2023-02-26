@@ -1932,6 +1932,11 @@
     "get-intrinsic" "^1.0.2"
     "object-inspect" "^1.9.0"
 
+"simple-react-validator@^1.6.2":
+  "integrity" "sha512-49KhaVh7wXTANXKuvLtRebK1RKTBi3Cu/7jf8ssBdL+9ShZOfW74nkPWK+AFj4NApSYpYozMQ27ZybE630SNVA=="
+  "resolved" "https://registry.npmjs.org/simple-react-validator/-/simple-react-validator-1.6.2.tgz"
+  "version" "1.6.2"
+
 "slash@^3.0.0":
   "integrity" "sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q=="
   "resolved" "https://registry.npmjs.org/slash/-/slash-3.0.0.tgz"
