@@ -14,6 +14,13 @@
   }
 }
 
+@font-face {
+  font-family: 'Maximum Impact';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Maximum Impact Regular'), url('./fonts/Maximum Impact.woff') format('woff');
+}
+
 h1,
 h2,
 h3,
@@ -35,6 +42,25 @@ textarea {
 body {
   font-family: "Ageo", sans-serif;
 }
+
+ul{
+  padding-left: 0!important;
+}
+
+a{
+  text-decoration: none!important;
+}
+
+.heroSection{
+  height: 100vh;
+  min-height: 900px;
+}
+
+@media(max-width:767px) {
+    .heroSection{
+      min-height: 1020px;
+    }
+  }
 
 .heroSection::after {
   content: "";
@@ -106,14 +132,16 @@ body {
   background-clip: text;
   text-fill-color: transparent;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
+  font-family: 'Maximum Impact';
 }
 .aboutSection {
   position: relative;
   height: 100%;
 }
 .aboutBackground {
+  position: relative;
   background: linear-gradient(
     106.38deg,
     #ff9127 18.11%,
@@ -266,7 +294,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       ),
       url("/assets/images/brand.jpg");
 
-    clip-path: polygon(0 39%, 100% 0%, 100% 100%, 0% 100%);
+    /* clip-path: polygon(0 39%, 100% 0%, 100% 100%, 0% 100%); */
+    clip-path: polygon(0 31%, 100% 0, 100% 65%, 0 96%);
     position: absolute;
     background-size: cover;
     top: 0;
@@ -414,6 +443,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     font-size: 35px;
     line-height: 60px;
     text-transform: uppercase;
+    font-family: 'Maximum Impact';
   }
   .blogSection::before {
     content: "";
@@ -451,3 +481,4 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .text88 {
   @apply text-[88px] leading-[108px] tablet:text-[50px] tablet:leading-[80px] phone:text-[30px] phone:leading-[60px] desktop:text-[64px];
 }
+
