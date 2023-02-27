@@ -466,6 +466,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .text64 {
   @apply text-[64px] leading-[88px] tablet:text-[50px] tablet:leading-[60px] phone:text-[40px] phone:leading-[60px];
 }
+.text62 {
+  @apply text-[62px] leading-[88px] tablet:text-[50px] tablet:leading-[60px] phone:text-[40px] phone:leading-[60px];
+}
 .text40 {
   @apply text-[40px] leading-[77px] phone:text-[30px] phone:leading-[60px];
 }
