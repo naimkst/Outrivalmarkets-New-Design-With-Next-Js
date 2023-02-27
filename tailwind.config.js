@@ -24,7 +24,7 @@ module.exports = {
 
         miniLaptop: { max: "1278px" },
 
-        laptop: { max: "1023px" },
+        laptop: { max: "1024px" },
 
         tablet: { max: "768px" },
 

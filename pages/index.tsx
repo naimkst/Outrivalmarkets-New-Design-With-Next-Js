@@ -8,15 +8,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import Link from "next/link";
-import BlogSec from '../components/blog';
-import Oriented from '../components/Oriented/Oriented';
+import BlogSec from "../components/blog";
+import Oriented from "../components/Oriented/Oriented";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      <div className='hero-section'>
+      <div className="hero-section">
         {/* Hero Section */}
         <div className="absolute inset-0 flex justify-center z-50 top-2 logo">
           <div>
@@ -32,10 +32,8 @@ export default function Home() {
         <div className="h-[1220px] z-30 relative flex items-center justify-center heroSection phone:h-[100vh] phone:px-4">
           <div className="z-50 relative text-center about-hero-text">
             <p className="text88 text-white font-bold w-[100%] m-auto text-center tablet:w-full ">
-              UTLIZING “BUNKER-BUSTER”
-              MARKETING METHODS
-              TO DETONATE YOUR
-              BRAND PRESENCE
+              UTLIZING “BUNKER-BUSTER” MARKETING METHODS TO DETONATE YOUR BRAND
+              PRESENCE
             </p>
             <div className="py-16">
               <button className="bg-white h-[70px] px-[45px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
@@ -48,16 +46,13 @@ export default function Home() {
             <img src="/assets/images/bulb.png" alt="" />
           </div>
         </div>
-
       </div>
-
 
       {/* Our Brand */}
       <div className="container m-auto text-center py-14 w-[70%] phone:w-full phone:px-4 philosophy">
         <h2 className="sectionTitle text44">Our Philosophy:</h2>
         <p className="text64 font-bold">
-          We Make You Big Or We Go Home‛
-          Again, We Do ‚Uhum‛.. Outrival!
+          We Make You Big Or We Go Home‛ Again, We Do ‚Uhum‛.. Outrival!
         </p>
       </div>
 
@@ -120,7 +115,8 @@ export default function Home() {
             WHAT OUR CLIENTS ARE SAYING ABOUT US
           </h2>
           <p className="text64 text-black font-bold w-[80%] m-auto text-center tablet:w-full tablet:px-5 phone:w-full phone:px-0">
-            Some Of Our Favorite Clients, That Left Some Good Words For Us.. Kid You Not, For A Good Reason!
+            Some Of Our Favorite Clients, That Left Some Good Words For Us.. Kid
+            You Not, For A Good Reason!
           </p>
         </div>
 
@@ -305,7 +301,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Call To Action */}
+      {/* Book Cover section */}
       <div className="relative videoSection flex flex-col justify-center items-center text-center mt-[50px] overflow-hidden tablet:bg-[#fff6ef] phone:px-4 ">
         <div className="absolute line-shape -left-20 top-[100px] z-50 tablet:hidden">
           <img src="/assets/images/about-shape.png" alt="" />
@@ -314,28 +310,63 @@ export default function Home() {
           <img src="/assets/images/video-shape.png" alt="" />
         </div>
         <div className="relative z-50 pt-[350px] pb-[100px] tablet:pt-12 tablet:pb-12">
-          <div className="container m-auto text-center py-14 tablet:py-5">
-            <h2 className="sectionTitle text44 mb-3">
-              7 MUST READ VIGOROUS MARKETING TACTICS FOR 2023!!
-            </h2>
-          </div>
-          <div className="imageFull w-[80%] m-auto tablet:w-full tablet:px-5 phone:px-2 phone:w-full">
-            <Image src={"/assets/images/video.png"} alt="Video Image" fill />
-          </div>
-
-          <div className="py-16">
-            <button className="videoButtonGradient bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-              <p className="text-white">Download Free Copy</p>
-            </button>
+          <div className="container m-auto py-14 tablet:py-5">
+            <div className="container">
+              <div className="grid grid-cols-7 items-center justify-between tablet:grid-cols-1">
+                <div className="tablet:text-center col-span-3">
+                  <img
+                    src="/assets/images/book.png"
+                    className="tablet:w-2/3 tablet:inline-block"
+                    alt=""
+                  />
+                </div>
+                <div className="tablet:text-center tablet:px-5 col-span-4 text-left">
+                  <h2 className="sectionTitle text44">
+                    7 MUST READ VIGOROUS MARKETING TACTICS FOR 2023!!
+                  </h2>
+                  <p className="text64 text-black font-bold py-3 phone:text-[30px]">
+                    {`7 Awesome`} <br />
+                    {`‘non-rocket- science’ tips`} <br />
+                    {`that marketing companies`} <br />
+                    {`don’t want`} <br />
+                    {`you to know`}
+                  </p>
+                  <div className="">
+                    <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[45px]">
+                      <span className="text-white">{`Download here`}</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       {/* Coonet with us today */}
+
+      <div className="brand-sec relative  container rounded-[20px] w-[80%] text-center z-50 tablet:w-full tablet:px-5 tablet:mt-12 tablet:overflow-hidden mt-10">
+        <div className="aboutBackground">
+          <div className="py-[52px] px-[100px] phone:px-4">
+            <p className="para text-white phone:text-[40px]">Brand Awareness</p>
+
+            <p className="text25 text-white w-[70%] m-auto py-[20px] phone:w-full phone:px-0 tablet:w-full tablet:px-0">
+              Consectetur eleifend a libero arcu tristique a urna tortor. Odio
+              nulla dignissim fames in non.
+            </p>
+            <div className="pt-10">
+              <button className="bg-white h-[70px] px-[40px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
+                <p className="heroButtonGradient text24">
+                  {`Explode “Dem Sales!”`}
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Video Section with background */}
-      <div className="product-text flex flex-col justify-center items-center text-center mt-10 relative">
-        {/* <div className="absolute left-0 top-0 z-50">
-          <img src="/assets/images/about-shape.png" alt="" />
-        </div> */}
+
+      <div className="product-text flex flex-col justify-center items-center text-center mt-10 relative pb-10">
         <div className="relative z-50 pt-[100px] pb-[0px] tablet:pt-12 tablet:pb-12">
           <div className=" w-[100%] m-auto tablet:w-full tablet:px-5">
             <p className="text40 font-bold text-black">
@@ -367,64 +398,7 @@ export default function Home() {
       </div>
 
       {/* book cover section */}
-      <div className="h-[726px] brandSection tablet:h-[550px]"></div>
-
-      {/* get in touch today  */}
-      <div className="relative overflow-hidden py-[60px] tablet:pb-12 marketing">
-        <div className="container">
-          <div className="grid grid-cols-7 items-center justify-between tablet:grid-cols-1">
-            <div className="tablet:text-center col-span-3">
-              <img
-                src="/assets/images/book.png"
-                className="tablet:w-2/3 tablet:inline-block"
-                alt=""
-              />
-            </div>
-            <div className="tablet:text-center tablet:px-5  col-span-4">
-              <h2 className="sectionTitle text44">
-                7 MUST READ VIGOROUS MARKETING TACTICS FOR 2023!!
-              </h2>
-              <p className="text64 text-black font-bold py-3 phone:text-[30px]">
-                {`7 Awesome`} <br />
-                {`‘non-rocket- science’ tips`} <br />
-                {`that marketing companies`} <br />
-                {`don’t want`} <br />
-                {`you to know`}
-              </p>
-              <div className="">
-                <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[45px]">
-                  <span className="text-white">{`Download here`}</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="absolute right-0 bottom-[5%] tablet:hidden line-shape">
-            <img src="/assets/images/book-bg.png" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div className="brand-sec relative  container rounded-[20px] w-[80%] text-center z-50 tablet:w-full tablet:px-5 tablet:mt-12 tablet:overflow-hidden">
-        <div className="aboutBackground">
-          <div className="py-[52px] px-[100px] phone:px-4">
-            <p className="para text-white phone:text-[40px]">
-              Brand Awareness
-            </p>
-
-            <p className="text25 text-white w-[70%] m-auto py-[20px] phone:w-full phone:px-0 tablet:w-full tablet:px-0">
-              Consectetur eleifend a libero arcu tristique a urna tortor. Odio
-              nulla dignissim fames in non.
-            </p>
-            <div className="pt-10">
-              <button className="bg-white h-[70px] px-[40px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-                <p className="heroButtonGradient text24">
-                  {`Explode “Dem Sales!”`}
-                </p>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* <div className="h-[726px] brandSection tablet:h-[550px]"></div> */}
 
       {/* marketing struture section */}
       <div className="relative py-[120px] bg-[#090D48] business-sec">
@@ -590,7 +564,6 @@ export default function Home() {
       </div>
       <Oriented />
       <BlogSec />
-
     </>
   );
 }
