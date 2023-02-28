@@ -497,3 +497,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .text88 {
   @apply text-[88px] leading-[108px] tablet:text-[50px] tablet:leading-[80px] phone:text-[30px] phone:leading-[60px] desktop:text-[64px];
 }
+.about-text {
+  @apply text40 font-bold text-black;
+}

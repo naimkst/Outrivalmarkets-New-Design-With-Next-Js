@@ -19,23 +19,24 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const { loading, error, data } = useFetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/home-page?populate=*`
+    `${process.env.NEXT_PUBLIC_API_URL}/home-page?populate=deep`
   );
+
   console.log(data);
   return (
     <>
-      <HeroSection />
-      <OurPhilosophy />
-      <AboutSection />
-      <ReadyToLearn />
-      <TestimonialSection />
-      <CoverSection />
-      <BrandSection />
-      <ConnectTodaySection />
+      <HeroSection data={data} />
+      <OurPhilosophy data={data} />
+      <AboutSection data={data} />
+      <ReadyToLearn data={data} />
+      <TestimonialSection data={data} />
+      <CoverSection data={data} />
+      <BrandSection data={data} />
+      <ConnectTodaySection data={data} />
       {/* <div className="h-[726px] brandSection tablet:h-[550px]"></div> */}
-      <BusinessTalkSection />
-      <CreativeMindSection />
-      <OurProcessSection />
+      <BusinessTalkSection data={data} />
+      <CreativeMindSection data={data} />
+      <OurProcessSection data={data} />
       <Oriented />
       <BlogSec />
     </>
