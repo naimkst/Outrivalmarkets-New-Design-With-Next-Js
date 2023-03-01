@@ -37,8 +37,8 @@ export default function Home() {
       <BusinessTalkSection data={data} />
       <CreativeMindSection data={data} />
       <OurProcessSection data={data} />
-      <Oriented />
-      <BlogSec />
+      <Oriented data={data} />
+      <BlogSec data={data} />
     </>
   );
 }
