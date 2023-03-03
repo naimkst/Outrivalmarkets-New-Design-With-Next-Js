@@ -13,7 +13,6 @@ export const OurProcessSection = ({ data }: any) => {
   );
 
   const processList: any = processListData;
-  console.log(processList, "processList");
 
   return (
     <div className="bg-[#090D48] py-[100px] relative process-sec">

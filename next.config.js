@@ -2,14 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "admin.outrivalmarkets.com",
-        port: "",
-        pathname: "/uploads/**",
-      },
-    ],
+    domains: ["admin.outrivalmarkets.com"],
   },
 };
 

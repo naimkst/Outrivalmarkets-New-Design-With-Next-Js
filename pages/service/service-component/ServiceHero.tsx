@@ -1,28 +1,16 @@
 import Link from "next/link";
 import React from "react";
 
-const AboutHero = ({ data }: any) => {
-  const heroSection = data?.data?.attributes?.HeroSection;
+const ServiceHero = ({ data }: any) => {
+  const HeroSection = data?.data?.attributes?.HeroSection;
   return (
-    <div className="hero-section">
-      <style jsx>{`
-        .heroSection::after {
-          background: linear-gradient(
-              90deg,
-              rgba(255, 139, 45, 0.8) 0%,
-              rgba(232, 80, 91, 0.8) 57%,
-              rgba(0, 0, 0, 0.8) 100%
-            ),
-            url(${process.env.NEXT_PUBLIC_API_BASE_URL}${heroSection?.HeroImage
-              ?.data?.attributes?.url});
-        }
-      `}</style>
+    <div className="hero-section service-hero">
       {/* Hero Section */}
       <div className="absolute inset-0 flex justify-center z-50 top-2 logo">
         <Link href={"/"}>
           <div className="">
             <img
-              className="w-[200px] phone:w-[120px]"
+              className="w-[200px] phone:w-[120px] cursor-pointer"
               src="/assets/images/logo.png"
               alt="logo"
             />
@@ -33,13 +21,16 @@ const AboutHero = ({ data }: any) => {
       {/* Our Philosophy: */}
       <div className="h-[1220px] z-30 relative flex items-center justify-center heroSection phone:h-[100vh] phone:px-4">
         <div className="z-50 relative text-center about-hero-text">
-          <p className="text-[75px] text-white font-bold w-[100%] m-auto text-center tablet:w-full laptop:text-[50px]">
-            {heroSection?.Description}
+          <p className="text88 text-white font-bold w-[100%] m-auto text-center tablet:w-full ">
+            {HeroSection?.Description}
           </p>
-          <div className="py-16">
-            <Link href={String(heroSection?.ButtonUrl)}>
+          <ul>
+            <li>{HeroSection?.ShortDescription}</li>
+          </ul>
+          <div className="py-3">
+            <Link href={String(HeroSection?.ButtonUrl)}>
               <button className="bg-white h-[70px] px-[45px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-                <span className="heroButtonGradient text24 button">{`${heroSection?.ButtonText}`}</span>
+                <span className="heroButtonGradient text24 button">{`${HeroSection?.ButtonText}`}</span>
               </button>
             </Link>
           </div>
@@ -52,4 +43,4 @@ const AboutHero = ({ data }: any) => {
     </div>
   );
 };
-export default AboutHero;
+export default ServiceHero;

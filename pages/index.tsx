@@ -21,8 +21,6 @@ export default function Home() {
   const { loading, error, data } = useFetch(
     `${process.env.NEXT_PUBLIC_API_URL}/home-page?populate=deep`
   );
-
-  console.log(data);
   return (
     <>
       <HeroSection data={data} />
