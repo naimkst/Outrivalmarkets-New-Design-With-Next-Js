@@ -20,7 +20,7 @@ const AboutPage = () => {
       <TeamInfo data={data} />
       <TeamMember data={data} />
       <Oriented data={data} />
-      <BlogSec data={data} />
+      <BlogSec />
     </div>
   );
 };

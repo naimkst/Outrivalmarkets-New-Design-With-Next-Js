@@ -13,7 +13,8 @@ const TeamInfo = ({ data }: any) => {
       <div className="container">
         <div className="team-info-text">
           <h5 className="sectionTitle text44">{OurTeam?.Title}</h5>
-          <ReactMarkdown children={`${OurTeam?.Description}`} className="" />
+          <ReactMarkdown>{`${OurTeam?.Description}`}</ReactMarkdown>
+
           <Link
             href={String(OurTeam?.ButtonUrl)}
             className="theme-btn videoButtonGradient bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]"

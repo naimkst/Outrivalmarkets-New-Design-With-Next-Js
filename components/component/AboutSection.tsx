@@ -11,7 +11,7 @@ export const AboutSection = ({ data }: any) => {
       </div>
       <div className="relative z-50 pt-[300px] pb-[350px] tablet:pt-12 tablet:pb-12 tablet:bg-[#fff6ef]">
         <div className="w-[100%] m-auto tablet:w-full tablet:px-5 about-text">
-          <ReactMarkdown children={`${aboutSection?.Description}`} />
+          <ReactMarkdown>{`${aboutSection?.Description}`}</ReactMarkdown>
         </div>
       </div>
     </div>

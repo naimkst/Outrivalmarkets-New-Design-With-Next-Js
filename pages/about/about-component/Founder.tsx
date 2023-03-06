@@ -12,10 +12,8 @@ const Founder = ({ data }: any) => {
             {OurFounder?.SectionTitle}
           </span>
           <div>
-            <ReactMarkdown
-              children={`${OurFounder?.Description}`}
-              className=""
-            />
+            
+            <ReactMarkdown>{`${OurFounder?.Description}`}</ReactMarkdown>
           </div>
         </div>
       </div>

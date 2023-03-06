@@ -8,10 +8,8 @@ export const CreativeMindSection = ({ data }: any) => {
   return (
     <div className="relative py-[100px] creative">
       <div className="w-[70%] m-auto text-center tablet:w-full tablet:px-5 phone:px-4 creative-inner">
-        <ReactMarkdown
-          children={`${CreativeMinds?.Description}`}
-          className="text40 font-bold mb-8"
-        />
+        
+        <ReactMarkdown>{`${CreativeMinds?.Description}`}</ReactMarkdown>
 
         <Link href={String(CreativeMinds?.ButtonUrl)}>
           <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[45px]">

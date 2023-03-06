@@ -9,7 +9,7 @@ export const ConnectTodaySection = ({ data }: any) => {
     <div className="product-text flex flex-col justify-center items-center text-center mt-10 relative pb-10">
       <div className="relative z-50 pt-[100px] pb-[0px] tablet:pt-12 tablet:pb-12">
         <div className=" w-[100%] m-auto tablet:w-full tablet:px-5">
-          <ReactMarkdown children={`${GreatProductsSection?.Description}`} />
+          <ReactMarkdown>{`${GreatProductsSection?.Description}`}</ReactMarkdown>
         </div>
 
         <div className="py-10">

@@ -4,7 +4,7 @@ import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
-import useFetch from "../../../hooks/useFetch";
+import useFetch from "../../hooks/useFetch";
 
 export const TestimonialSection = ({ data }: any) => {
   const Testimonial = data?.data?.attributes?.Testimonial;

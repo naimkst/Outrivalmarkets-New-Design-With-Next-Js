@@ -8,10 +8,9 @@ export const BusinessTalkSection = ({ data }: any) => {
   return (
     <div className="relative py-[120px] bg-[#090D48] business-sec">
       <div className="w-[100%] m-auto text-center tablet:w-full tablet:px-5">
-        <ReactMarkdown
-          children={`${BusinessRegular?.Description}`}
-          className="text40 font-bold text-white"
-        />
+        
+        <ReactMarkdown className="text40 font-bold text-white">{`${BusinessRegular?.Description}`}</ReactMarkdown>
+
         <div className="pt-16">
           <Link href={String(BusinessRegular?.ButtonUrl)}>
             <button className="videoButtonGradient h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">

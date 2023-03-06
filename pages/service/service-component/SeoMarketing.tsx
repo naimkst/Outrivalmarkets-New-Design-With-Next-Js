@@ -61,10 +61,7 @@ const SeoMarketing = ({ data }: any) => {
                     }
                   />
                 </div>
-                <ReactMarkdown
-                  children={`${SEOService?.ShortDescription}`}
-                  className=""
-                />
+                <ReactMarkdown>{`${SEOService?.ShortDescription}`}</ReactMarkdown>
               </div>
             </div>
           </div>

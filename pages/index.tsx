@@ -2,17 +2,17 @@ import { Inter } from "@next/font/google";
 
 import BlogSec from "../components/blog";
 import Oriented from "../components/Oriented/Oriented";
-import { HeroSection } from "./index/component/HeroSection";
-import { OurPhilosophy } from "./index/component/OurPhilosophy";
-import { AboutSection } from "./index/component/AboutSection";
-import { ReadyToLearn } from "./index/component/ReadyToLearn";
-import { TestimonialSection } from "./index/component/TestimonialSection";
-import { CoverSection } from "./index/component/CoverSection";
-import { BrandSection } from "./index/component/BrandSection";
-import { ConnectTodaySection } from "./index/component/ConnectTodaySection";
-import { BusinessTalkSection } from "./index/component/BusinessTalkSection";
-import { CreativeMindSection } from "./index/component/CreativeMindSection";
-import { OurProcessSection } from "./index/component/OurProcessSection";
+import { HeroSection } from "../components/component/HeroSection";
+import { OurPhilosophy } from "../components/component/OurPhilosophy";
+import { AboutSection } from "../components/component/AboutSection";
+import { ReadyToLearn } from "../components/component/ReadyToLearn";
+import { TestimonialSection } from "../components/component/TestimonialSection";
+import { CoverSection } from "../components/component/CoverSection";
+import { BrandSection } from "../components/component/BrandSection";
+import { ConnectTodaySection } from "../components/component/ConnectTodaySection";
+import { BusinessTalkSection } from "../components/component/BusinessTalkSection";
+import { CreativeMindSection } from "../components/component/CreativeMindSection";
+import { OurProcessSection } from "../components/component/OurProcessSection";
 import useFetch from "../hooks/useFetch";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -36,7 +36,7 @@ export default function Home() {
       <CreativeMindSection data={data} />
       <OurProcessSection data={data} />
       <Oriented data={data} />
-      <BlogSec data={data} />
+      <BlogSec />
     </>
   );
 }

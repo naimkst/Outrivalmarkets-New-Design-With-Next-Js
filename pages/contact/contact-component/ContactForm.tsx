@@ -14,7 +14,7 @@ const ContactForm = () => {
     const [validator] = useState(new SimpleReactValidator({
         className: 'errorMessage'
     }));
-    const changeHandler = e => {
+    const changeHandler = (e: any)  => {
         setForms({ ...forms, [e.target.name]: e.target.value })
         if (validator.allValid()) {
             validator.hideMessages();
@@ -23,7 +23,7 @@ const ContactForm = () => {
         }
     };
 
-    const submitHandler = e => {
+    const submitHandler = (e: any) => {
         e.preventDefault();
         if (validator.allValid()) {
             validator.hideMessages();
@@ -84,7 +84,7 @@ const ContactForm = () => {
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
                             value={forms.subject}
-                            type="text"
+                            // type="text"
                             name="subject">
                             <option>Choose a Service</option>
                             <option>Web Design</option>
@@ -99,7 +99,7 @@ const ContactForm = () => {
                         onBlur={(e) => changeHandler(e)}
                         onChange={(e) => changeHandler(e)}
                         value={forms.message}
-                        type="text"
+                        // type="text"
                         name="message"
                         placeholder="Message">
                     </textarea>

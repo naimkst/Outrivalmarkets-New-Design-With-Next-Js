@@ -61,10 +61,7 @@ const GraphicDesign = ({ data }: any) => {
                     }
                   />
                 </div>
-                <ReactMarkdown
-                  children={`${graphicsDesign?.ShortDescription}`}
-                  className=""
-                />
+                <ReactMarkdown>{`${graphicsDesign?.ShortDescription}`}</ReactMarkdown>
                 <Link
                   href={String(graphicsDesign?.ButtonLink)}
                   className="theme-btn mt-4 videoButtonGradient bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]"

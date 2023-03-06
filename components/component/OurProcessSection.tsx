@@ -1,5 +1,5 @@
 import React from "react";
-import useFetch from "../../../hooks/useFetch";
+import useFetch from "../../hooks/useFetch";
 
 export const OurProcessSection = ({ data }: any) => {
   const OurProcess = data?.data?.attributes?.OurProcess;
@@ -31,7 +31,7 @@ export const OurProcessSection = ({ data }: any) => {
           {processList?.data?.map((item: any, index: number) => {
             if (index === 0) {
               return (
-                <div className="px-20 pb-20 phone:px-4">
+                <div key={`process${index}`} className="px-20 pb-20 phone:px-4">
                   <div className="grid grid-cols-2 text-center justify-between items-center tablet:grid-cols-1">
                     <div className="span-1 text-center relative tablet:order-last">
                       <div className="borderProcessRight max-w-[400px] m-auto">
@@ -56,7 +56,7 @@ export const OurProcessSection = ({ data }: any) => {
             }
             if (index === 1) {
               return (
-                <div className="px-20 pb-20 phone:px-4">
+                <div key={`process${index}`} className="px-20 pb-20 phone:px-4">
                   <div className="grid grid-cols-2 text-center justify-between items-center tablet:grid-cols-1">
                     <div className="span-1 text-center relative order-last">
                       <div className="borderProcessLeft max-w-[400px] m-auto">
@@ -82,7 +82,7 @@ export const OurProcessSection = ({ data }: any) => {
             }
             if (index === 2) {
               return (
-                <div className="px-20 pb-20 phone:px-4">
+                <div key={`process${index}`} className="px-20 pb-20 phone:px-4">
                   <div className="grid grid-cols-2 text-center justify-between items-center tablet:grid-cols-1">
                     <div className="span-1 text-center relative tablet:order-last">
                       <div className="borderThree  max-w-[400px] m-auto">
@@ -108,7 +108,10 @@ export const OurProcessSection = ({ data }: any) => {
             }
             if (index === 3) {
               return (
-                <div className="px-20 pb-20 phone:px-4 phone:py-0">
+                <div
+                  key={`process${index}`}
+                  className="px-20 pb-20 phone:px-4 phone:py-0"
+                >
                   <div className="grid grid-cols-2 text-center justify-between items-center tablet:grid-cols-1">
                     <div className="span-1 text-center relative order-last">
                       <div className="fourStyle  max-w-[400px] m-auto">

@@ -12,22 +12,14 @@ const TeamAbout = ({ data }: any) => {
         <div className="team-about-text">
           <div className="team-about-text-top">
             <span className="sectionTitle text44">
-              <ReactMarkdown
-                children={`${OurSmallTeam?.Title}`}
-                className="sectionTitle text44"
-              />
+              <ReactMarkdown className="sectionTitle text44">{`${OurSmallTeam?.Title}`}</ReactMarkdown>
             </span>
-            <ReactMarkdown
-              children={`${OurSmallTeam?.ShortDescription}`}
-              className=""
-            />
+
+            <ReactMarkdown>{`${OurSmallTeam?.ShortDescription}`}</ReactMarkdown>
           </div>
 
           <div>
-            <ReactMarkdown
-              children={`${OurSmallTeam?.Description}`}
-              className=""
-            />
+            <ReactMarkdown>{`${OurSmallTeam?.Description}`}</ReactMarkdown>
           </div>
         </div>
       </div>

@@ -39,10 +39,9 @@ const Marketing = ({ data }: any) => {
                   />
                 </div>
                 <p>{`We know that creating a website and designing some graphics is only half the battle. That's why we also offer marketing strategizing to combine all of our services and set forth a compelling marketing strategy that will make you the talk of the town.`}</p>
-                <ReactMarkdown
-                  children={`${MarketingStrategies?.ShortDescription}`}
-                  className=""
-                />
+                
+                <ReactMarkdown>{`${MarketingStrategies?.ShortDescription}`}</ReactMarkdown>
+
                 <Link
                   href={String(MarketingStrategies?.ButtonLink)}
                   className="theme-btn mt-4 videoButtonGradient bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]"

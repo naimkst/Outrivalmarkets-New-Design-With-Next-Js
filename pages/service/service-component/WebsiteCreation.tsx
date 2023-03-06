@@ -38,10 +38,8 @@ const WebsiteCreation = ({ data }: any) => {
                       }
                     />
                   </div>
-                  <ReactMarkdown
-                    children={`${OurServices?.ShortDescription}`}
-                    className=""
-                  />
+
+                  <ReactMarkdown>{`${OurServices?.ShortDescription}`}</ReactMarkdown>
                 </div>
               </div>
               <div className="col-lg-5 order-lg-2 order-1">
@@ -68,10 +66,9 @@ const WebsiteCreation = ({ data }: any) => {
               </div>
             </div>
           </div>
-          <ReactMarkdown
-            children={`${OurServices?.Description}`}
-            className=""
-          />
+
+          <ReactMarkdown>{`${OurServices?.Description}`}</ReactMarkdown>
+
           <Link
             href={String(OurServices?.ButtonLink)}
             className="theme-btn mt-4 videoButtonGradient bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]"
