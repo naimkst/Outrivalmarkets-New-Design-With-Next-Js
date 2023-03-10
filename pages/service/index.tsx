@@ -1,5 +1,5 @@
 import React from "react";
-import BlogSec from "../../components/blog";
+import BlogSec from "../../components/BlogSec";
 import Oriented from "../../components/Oriented/Oriented";
 import useFetch from "../../hooks/useFetch";
 import EmailMarketing from "./service-component/EmailMarketing";

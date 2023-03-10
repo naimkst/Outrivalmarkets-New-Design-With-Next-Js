@@ -1,6 +1,6 @@
 import { Inter } from "@next/font/google";
 
-import BlogSec from "../components/blog";
+import BlogSec from "../components/BlogSec";
 import Oriented from "../components/Oriented/Oriented";
 import { HeroSection } from "../components/component/HeroSection";
 import { OurPhilosophy } from "../components/component/OurPhilosophy";

@@ -1,7 +1,7 @@
 import React from "react";
 import { SlMenu } from "react-icons/sl";
 import { MdOutlineClose } from "react-icons/md";
-import Link from 'next/link'
+import Link from "next/link";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -11,8 +11,9 @@ export const Navigation = () => {
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        className={`${isOpen ? "menuIconBg" : "bg-[#ECEBEB]"
-          } pl-6 py-2 pr-3 rounded-r-[5px] inline-block fixed z-[100] top-1/2 cursor-pointer group hoveIconColor hamburger`}
+        className={`${
+          isOpen ? "menuIconBg" : "bg-[#ECEBEB]"
+        } pl-6 py-2 pr-3 rounded-r-[5px] inline-block fixed z-[100] top-1/2 cursor-pointer group hoveIconColor hamburger`}
       >
         {isOpen ? (
           <MdOutlineClose color="#fff" size={40} />
@@ -25,7 +26,8 @@ export const Navigation = () => {
         <div className="h-[100vh] bg-white/80 fixed top-0 z-[60] w-full backdrop-blur-md mobail-menu">
           <ul className="flex items-center justify-center flex-col h-full">
             <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
-              <Link onClick={() => setIsOpen(false) }
+              <Link
+                onClick={() => setIsOpen(false)}
                 className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/"
               >
@@ -36,15 +38,20 @@ export const Navigation = () => {
               </p>
             </li>
             <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
-              <Link onClick={() => setIsOpen(false) } href="/about" className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]">
-                  About
+              <Link
+                onClick={() => setIsOpen(false)}
+                href="/about"
+                className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
+              >
+                About
               </Link>
               <p className="text-black text-center font-bold group-hover:text-primary">
                 Insights On Who We Are
               </p>
             </li>
             <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
-              <Link onClick={() => setIsOpen(false) }
+              <Link
+                onClick={() => setIsOpen(false)}
                 className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/service"
               >
@@ -55,7 +62,8 @@ export const Navigation = () => {
               </p>
             </li>
             <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
-              <Link onClick={() => setIsOpen(false) }
+              <Link
+                onClick={() => setIsOpen(false)}
                 className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/portfolio"
               >
@@ -66,9 +74,10 @@ export const Navigation = () => {
               </p>
             </li>
             <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
-              <Link onClick={() => setIsOpen(false) }
+              <Link
+                onClick={() => setIsOpen(false)}
                 className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
-                href=""
+                href="/blog"
               >
                 Latest Blog
               </Link>
@@ -77,7 +86,8 @@ export const Navigation = () => {
               </p>
             </li>
             <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
-              <Link onClick={() => setIsOpen(false) }
+              <Link
+                onClick={() => setIsOpen(false)}
                 className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/contact"
               >

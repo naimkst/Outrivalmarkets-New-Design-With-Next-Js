@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import BlogSec from "../../components/blog";
+import BlogSec from "../../components/BlogSec";
 import Oriented from "../../components/Oriented/Oriented";
 import Portfolios from "../../api/portfolio";
 import PortfolioHero from "./portfolio-component/PortfolioHero";

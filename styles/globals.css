@@ -419,7 +419,16 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     color: white;
   }
 }
+.newArticleBg {
+  clip-path: polygon(0 36%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #fff6ef;
+}
+
 @media screen and (max-width: 768px) {
+  .newArticleBg {
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #fff6ef;
+  }
   .brandSection::before {
     content: "";
     background-repeat: no-repeat;
@@ -458,6 +467,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     text-transform: uppercase;
     font-family: "Maximum Impact";
   }
+
   .blogSection::before {
     content: "";
     background: linear-gradient(51.26deg, #e8505b -4.3%, #fc6e36 104.55%);
@@ -469,6 +479,41 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     height: 100%;
     z-index: -1;
   }
+}
+.blogTitles {
+  background: linear-gradient(276.17deg, #f45356 0%, #ff9127 104.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: "Maximum Impact";
+}
+.netArticleTitle {
+  background: linear-gradient(
+    106.38deg,
+    #ff9127 18.11%,
+    #f45356 52.23%,
+    #090d48 104.85%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.blogReadMore {
+  background: linear-gradient(
+    106.38deg,
+    #ff9127 18.11%,
+    #f45356 52.23%,
+    #090d48 104.85%
+  );
+  border-radius: 28.2759px 0px 0px 28.2759px;
+}
+
+.blogBackground {
+  background: rgba(255, 246, 239, 0.15);
+  border: 1px solid #cccccc;
+  border-radius: 20px;
 }
 .text64 {
   @apply text-[64px] leading-[88px] tablet:text-[50px] tablet:leading-[60px] phone:text-[40px] phone:leading-[60px];

@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         title: ['"Ageo"', "sans-serif"],
         content: ['"Ageo"', "sans-serif"],
+        Impact: ['"Maximum Impact"', "sans-serif"],
       },
       screens: {
         desktop1440: { max: "1440px" },
