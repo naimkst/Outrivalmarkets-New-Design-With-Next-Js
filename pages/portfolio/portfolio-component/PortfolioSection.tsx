@@ -1,11 +1,9 @@
 import React from "react";
-import Portfolios from "../../../api/portfolio";
 import Image from "next/image";
 import Link from "next/link";
 import useFetch from "../../../hooks/useFetch";
 
 const PortfolioSection = ({ portfolios, category, data }: any) => {
-  console.log(portfolios, "Portfolio");
   const PortfolioTitle = data?.data?.attributes?.PortfolioTitle;
 
   // init one ref to store the future isotope object
@@ -137,8 +135,8 @@ const PortfolioSection = ({ portfolios, category, data }: any) => {
                           <h2>
                             <Link
                               onClick={ClickHandler}
-                              href="/portfolio-single/[slug]"
-                              as={`/portfolio-single/${item?.attributes?.Title}`}
+                              href={`/portfolio-single/${item?.id}`}
+                              as={`/portfolio-single/${item?.id}`}
                             >
                               {item?.attributes?.Title}
                             </Link>
