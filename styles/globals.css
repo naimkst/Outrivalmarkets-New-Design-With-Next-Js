@@ -515,6 +515,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   border: 1px solid #cccccc;
   border-radius: 20px;
 }
+.contactUsButton {
+  background: linear-gradient(
+    106.38deg,
+    #ff9127 18.11%,
+    #f45356 52.23%,
+    #090d48 104.85%
+  );
+  border-radius: 7px;
+}
 .text64 {
   @apply text-[64px] leading-[88px] tablet:text-[50px] tablet:leading-[60px] phone:text-[40px] phone:leading-[60px];
 }
