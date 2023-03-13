@@ -12,7 +12,10 @@ export const NewArticleSection = ({ data, title }: any) => {
         </h2>
         <div className="grid grid-cols-2 gap-[30px] mt-[40px] tablet:grid-cols-1">
           {data?.map((item: any, index: number) => (
-            <div className="grid grid-cols-2 gap-0 relative tablet:grid-cols-1">
+            <div
+              key={`newart${index}`}
+              className="grid grid-cols-2 gap-0 relative tablet:grid-cols-1"
+            >
               <div className="relative target:order-last">
                 <Image
                   src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${

@@ -12,7 +12,10 @@ export const BlogCardSection = ({ data, blogs }: any) => {
     >
       <div className="max-w-[1345px] m-auto !p-0 tablet:mx-[15px]">
         {data?.map((item: any, index: number) => (
-          <div className="grid grid-cols-2 gap-0 relative tablet:grid-cols-1 mb-4">
+          <div
+            key={`blogcard${index}`}
+            className="grid grid-cols-2 gap-0 relative tablet:grid-cols-1 mb-4"
+          >
             <div className="relative target:order-last tablet:ml-0 rounded-[20px]">
               <Image
                 src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
@@ -67,7 +70,10 @@ export const BlogCardSection = ({ data, blogs }: any) => {
 
         <div className="grid grid-cols-2 gap-[30px] mt-[40px] tablet:grid-cols-1">
           {blogs?.map((item: any, index: number) => (
-            <div className="grid grid-cols-2 gap-0 relative tablet:grid-cols-1">
+            <div
+              key={`blog${index}`}
+              className="grid grid-cols-2 gap-0 relative tablet:grid-cols-1"
+            >
               <div className="relative target:order-last">
                 <Image
                   src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
