@@ -6,9 +6,31 @@ import { BlogCardSection } from "../../components/Blog/BlogCardSection";
 import { NewArticleSection } from "../../components/Blog/NewArticleSection";
 import BlogSec from "../../components/BlogSec";
 import Oriented from "../../components/Oriented/Oriented";
+import useFetch from "../../hooks/useFetch";
 import arrow from "/public/assets/images/arrow.svg";
 
 const Blog = () => {
+  const {
+    loading: featureLoading,
+    error: featureError,
+    data: featureBlog,
+  } = useFetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/blogs?populate=deep&[filters][blog_category][Title][$eq]=Pretium`
+  );
+
+  const { loading, error, data } = useFetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/blogs?populate=deep&[filters][blog_category][Title][$ne]=Pretium&[filters][blog_category][Title][$eq]=Popular`
+  );
+
+  const {
+    loading: allLoading,
+    error: allError,
+    data: allBlog,
+  } = useFetch(`${process.env.NEXT_PUBLIC_API_URL}/blogs?populate=deep`);
+  const blog: any = featureBlog;
+  const blogs: any = data;
+  const allBlogs: any = allBlog;
+
   return (
     <div>
       <div className="hero-section portfolio-hero">
@@ -59,11 +81,11 @@ const Blog = () => {
         </div>
       </div>
 
-      <BlogCardSection />
+      <BlogCardSection data={blog?.data} blogs={blogs?.data} />
       <div>
         <img src="/assets/images/about/full-shape.svg" alt="" />
       </div>
-      <NewArticleSection />
+      <NewArticleSection data={allBlogs?.data} />
       <Oriented />
       <BlogSec />
     </div>

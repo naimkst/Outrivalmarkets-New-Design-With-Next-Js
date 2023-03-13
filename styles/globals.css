@@ -420,7 +420,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 }
 .newArticleBg {
-  clip-path: polygon(0 36%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
   background-color: #fff6ef;
 }
 
