@@ -524,6 +524,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   );
   border-radius: 7px;
 }
+.blog-content p {
+  @apply text-black text-[35px] leading-[46.5px] font-Impact;
+}
 .text64 {
   @apply text-[64px] leading-[88px] tablet:text-[50px] tablet:leading-[60px] phone:text-[40px] phone:leading-[60px];
 }

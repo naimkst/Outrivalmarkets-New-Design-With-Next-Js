@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export const NewArticleSection = ({ data }: any) => {
+export const NewArticleSection = ({ data, title }: any) => {
   return (
     <div className="pt-[350px] pb-[100px] tablet:px-[15px] tablet:py-[50px] laptop:mx-[15px] tablet:mx-0 newArticleBg">
       <div className="max-w-[1345px] m-auto !p-0">
         <h2 className="text-[44px] font-bold netArticleTitle mb-[34px] tablet:text-center uppercase text-center">
-          New Articles
+          {title}
         </h2>
         <div className="grid grid-cols-2 gap-[30px] mt-[40px] tablet:grid-cols-1">
           {data?.map((item: any, index: number) => (
@@ -63,7 +63,7 @@ export const NewArticleSection = ({ data }: any) => {
                     </span>
                   </p>
                   <Link
-                    href={"/"}
+                    href={`/blog/${item?.id}`}
                     className="phone:w-full phone:px-[10px] phone:m-auto"
                   >
                     <button className="blogReadMore text-white font-bold first-letter text-[11.31px]  bg-[#5E6469] inline-block w-[100px] h-[37px] rounded-l-full text-center phone:w-full phone:rounded-full">

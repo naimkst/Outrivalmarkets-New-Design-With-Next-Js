@@ -53,7 +53,7 @@ export const BlogCardSection = ({ data, blogs }: any) => {
 
               <div className="flex justify-end mt-[25px] pb-[35px]">
                 <Link
-                  href={"/"}
+                  href={`/blog/${item?.id}`}
                   className="phone:w-full phone:m-auto phone:px-[10px]"
                 >
                   <button className="blogReadMore text-white first-letter text-[11.31px]  bg-[#5E6469] font-bold inline-block w-[128px] h-[37px] rounded-l-full text-center phone:w-full phone:rounded-full">
@@ -112,7 +112,7 @@ export const BlogCardSection = ({ data, blogs }: any) => {
                     Published On <span className="font-bold"> 30 June</span>
                   </p>
                   <Link
-                    href={"/"}
+                    href={`/blog/${item?.id}`}
                     className="phone:w-full phone:m-auto phone:px-[10px]"
                   >
                     <button className="blogReadMore text-white font-bold first-letter text-[11.31px]  bg-[#5E6469] inline-block w-[100px] h-[37px] rounded-l-full text-center phone:w-full phone:rounded-full">
