@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Logo } from "../../../components/Navigation/logo";
 import arrow from "/public/assets/images/arrow.svg";
 
 const PortfolioHero = ({ data }: any) => {
@@ -9,15 +10,7 @@ const PortfolioHero = ({ data }: any) => {
   return (
     <div className="hero-section portfolio-hero">
       {/* Hero Section */}
-      <div className="absolute inset-0 flex justify-center z-50 top-2 logo">
-        <div className="">
-          <img
-            className="w-[200px] phone:w-[120px]"
-            src="/assets/images/logo.png"
-            alt="logo"
-          />
-        </div>
-      </div>
+      <Logo />
 
       {/* Our Philosophy: */}
       <div className="h-[1220px] relative flex items-center justify-center heroSection phone:h-[100vh] phone:px-4">

@@ -5,6 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { BlogCardSection } from "../../components/Blog/BlogCardSection";
 import { NewArticleSection } from "../../components/Blog/NewArticleSection";
 import BlogSec from "../../components/BlogSec";
+import { Logo } from "../../components/Navigation/logo";
 import Oriented from "../../components/Oriented/Oriented";
 import useFetch from "../../hooks/useFetch";
 import arrow from "/public/assets/images/arrow.svg";
@@ -57,16 +58,7 @@ const Blog = () => {
           }
         `}</style>
         {/* Hero Section */}
-        <div className="absolute inset-0 flex justify-center z-50 top-2 logo">
-          <Link href={"/"}></Link>
-          <div className="">
-            <img
-              className="w-[200px] phone:w-[120px]"
-              src="/assets/images/logo.png"
-              alt="logo"
-            />
-          </div>
-        </div>
+        <Logo />
 
         {/* Our Philosophy: */}
         <div className="h-[1220px] relative flex items-center justify-center heroSection phone:min-h-[300px] phone:px-4">

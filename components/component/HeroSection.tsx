@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { Logo } from "../Navigation/logo";
 
 export const HeroSection = ({ data }: any) => {
   const heroSection = data?.data?.attributes?.HeroSection;
@@ -18,17 +19,7 @@ export const HeroSection = ({ data }: any) => {
         }
       `}</style>
       {/* Hero Section */}
-      <div className="absolute inset-0 flex justify-center z-50 top-2 logo">
-        <Link href="/">
-          <div>
-            <img
-              className="w-[200px] phone:w-[120px] cursor-pointer"
-              src="/assets/images/logo.png"
-              alt="logo"
-            />
-          </div>
-        </Link>
-      </div>
+      <Logo />
       <div className="h-[1220px] z-30 relative flex items-center justify-center heroSection phone:h-[100vh] phone:px-4">
         <div className="z-50 relative text-center about-hero-text">
           <p className="text-[75px] text-white font-bold w-[100%] m-auto text-center tablet:w-full ">

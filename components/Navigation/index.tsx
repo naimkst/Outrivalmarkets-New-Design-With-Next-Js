@@ -2,9 +2,11 @@ import React from "react";
 import { SlMenu } from "react-icons/sl";
 import { MdOutlineClose } from "react-icons/md";
 import Link from "next/link";
+import useFetch from "../../hooks/useFetch";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+
   return (
     <div>
       <div
