@@ -41,7 +41,10 @@ const BlogSec = () => {
 
           <div className="grid md:grid-cols-2 phone:grid-cols-1 gap-8 mt-16 tablet:grid-cols-1 tablet:text-left">
             {blog?.data?.map((item: any, index: number) => (
-              <div className="bg-[#FAFAFA] rounded-[7px] p-8 grid md:grid-cols-2 grid-cols-1 items-center justify-start gap-3 blog-item">
+              <div
+                key={`blogsec${index}`}
+                className="bg-[#FAFAFA] rounded-[7px] p-8 grid md:grid-cols-2 grid-cols-1 items-center justify-start gap-3 blog-item"
+              >
                 <div className="imageFull">
                   <Image
                     className="imgHover rounded-[10px]"
