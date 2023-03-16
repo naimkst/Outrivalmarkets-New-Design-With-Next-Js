@@ -1,11 +1,33 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { Logo } from "../../../components/Navigation/logo";
 
 const AboutHero = ({ data }: any) => {
+  const [video, setVideo] = React.useState<any>(null);
   const heroSection = data?.data?.attributes?.HeroSection;
+
+  useEffect(() => {
+    setTimeout(() => {
+      setVideo(heroSection?.HeroVideo?.data?.attributes?.url);
+    }, 1000);
+  }, [data]);
   return (
     <div className="hero-section">
+      {video && (
+        <video
+          autoPlay={true}
+          muted
+          loop
+          id="myVideo"
+          className="w-full absolute z-40 h-[100vh] object-cover video-bg opacity-20"
+        >
+          <source
+            src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${video ? video : ""}`}
+            type="video/mp4"
+          />
+        </video>
+      )}
+
       <style jsx>{`
         .heroSection::after {
           background: linear-gradient(

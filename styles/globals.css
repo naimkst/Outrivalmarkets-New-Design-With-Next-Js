@@ -69,7 +69,9 @@ a {
     min-height: 1020px;
   }
 }
-
+.video-bg {
+  clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
+}
 .heroSection::after {
   content: "";
   position: absolute;
@@ -78,12 +80,12 @@ a {
   width: 100%;
   height: 100%;
   background: linear-gradient(
-      90deg,
-      rgba(255, 139, 45, 0.8) 0%,
-      rgba(232, 80, 91, 0.8) 57%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
-    url("/assets/images/hero.jpg");
+    90deg,
+    rgba(255, 139, 45, 0.8) 0%,
+    rgba(232, 80, 91, 0.8) 57%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  /* url("/assets/images/hero.jpg"); */
   clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
   z-index: -1;
   background-size: cover;
