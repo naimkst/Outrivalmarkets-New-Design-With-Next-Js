@@ -1,3 +1,5 @@
+@import "loaders.css/src/animations/line-scale-pulse-out-rapid.scss";
+
 $bg-color: #090d48;
 $bg-color2: #fff6ef;
 $white: #fff;
@@ -1936,4 +1938,12 @@ button {
   h2.hidden {
     display: none;
   }
+}
+$primary-color: red;
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import BlogSec from "../../components/BlogSec";
+import { Loading } from "../../components/Loader";
 import Oriented from "../../components/Oriented/Oriented";
 import useFetch from "../../hooks/useFetch";
 import AboutHero from "./about-component/AboutHero";
@@ -12,16 +13,20 @@ const AboutPage = () => {
   const { loading, error, data } = useFetch(
     `${process.env.NEXT_PUBLIC_API_URL}/about-page?populate=deep`
   );
-  return (
-    <div>
-      <AboutHero data={data} />
-      <TeamAbout data={data} />
-      <Founder data={data} />
-      <TeamInfo data={data} />
-      <TeamMember data={data} />
-      <Oriented data={data} />
-      <BlogSec />
-    </div>
-  );
+  if (loading) {
+    return <Loading />;
+  } else {
+    return (
+      <div>
+        <AboutHero data={data} />
+        <TeamAbout data={data} />
+        <Founder data={data} />
+        <TeamInfo data={data} />
+        <TeamMember data={data} />
+        <Oriented data={data} />
+        <BlogSec />
+      </div>
+    );
+  }
 };
 export default AboutPage;

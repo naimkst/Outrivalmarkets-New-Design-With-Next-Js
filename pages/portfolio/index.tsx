@@ -1,5 +1,6 @@
 import React from "react";
 import BlogSec from "../../components/BlogSec";
+import { Loading } from "../../components/Loader";
 import Oriented from "../../components/Oriented/Oriented";
 import useFetch from "../../hooks/useFetch";
 import PortfolioHero from "./portfolio-component/PortfolioHero";
@@ -24,14 +25,18 @@ const PortfolioPage = () => {
 
   const Portfolio = dataList;
   const cat = catList;
-  console.log(Portfolio, "Portfolio");
-  return (
-    <div>
-      <PortfolioHero data={data} />
-      <PortfolioSection portfolios={Portfolio} category={cat} data={data} />
-      <Oriented data={data} />
-      <BlogSec />
-    </div>
-  );
+
+  if (loading || loadingPortfolio || catLoading) {
+    return <Loading />;
+  } else {
+    return (
+      <div>
+        <PortfolioHero data={data} />
+        <PortfolioSection portfolios={Portfolio} category={cat} data={data} />
+        <Oriented data={data} />
+        <BlogSec />
+      </div>
+    );
+  }
 };
 export default PortfolioPage;
