@@ -27,7 +27,7 @@ export const OurPhilosophy = ({ data }: any) => {
           <div className="mt-[80px]">
             <VideoModal videoLink={VideoSection?.VideoId} />
           </div>
-          <div className="absolute -left-[100px] -top-[110px] z-50 tablet:hidden">
+          <div className="absolute -left-[100px] -top-[145px] z-50 tablet:hidden">
             <img src="/assets/images/about-shape.png" alt="" />
           </div>
         </div>
