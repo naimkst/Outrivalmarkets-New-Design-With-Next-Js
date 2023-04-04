@@ -15,23 +15,25 @@ export const OurPhilosophy = ({ data }: any) => {
         <p className="text64 font-bold">{ourPhilosophy?.Description}</p>
       </div>
 
-      {VideoSection?.isShow && (
-        <div className="container relative mt-[100px]">
-          <div className="max-w-[1166px] m-auto">
-            <h2 className="sectionTitle text44 text-center mb-[50px]">
-              {VideoSection?.Title}
-            </h2>
-            <ReactMarkdown className="text64 font-bold text-center">{`${VideoSection?.Description}`}</ReactMarkdown>
-          </div>
+      <div className="relative">
+        {VideoSection?.isShow && (
+          <div className="container relative mt-[100px]">
+            <div className="max-w-[1166px] m-auto">
+              <h2 className="sectionTitle text44 text-center mb-[50px]">
+                {VideoSection?.Title}
+              </h2>
+              <ReactMarkdown className="text64 font-bold text-center">{`${VideoSection?.Description}`}</ReactMarkdown>
+            </div>
 
-          <div className="mt-[80px]">
-            <VideoModal videoLink={VideoSection?.VideoId} />
+            <div className="mt-[80px]">
+              <VideoModal videoLink={VideoSection?.VideoId} />
+            </div>
           </div>
-          <div className="absolute -left-[100px] -top-[145px] z-50 tablet:hidden">
-            <img src="/assets/images/about-shape.png" alt="" />
-          </div>
+        )}
+        <div className="absolute left-0 -top-[145px] z-50 tablet:hidden">
+          <img src="/assets/images/about-shape.png" alt="" />
         </div>
-      )}
+      </div>
     </>
   );
 };
