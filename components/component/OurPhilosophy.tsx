@@ -15,8 +15,8 @@ export const OurPhilosophy = ({ data }: any) => {
         <p className="text64 font-bold">{ourPhilosophy?.Description}</p>
       </div>
 
-      <div className="relative">
-        {VideoSection?.isShow && (
+      {VideoSection?.isShow && (
+        <div className="relative">
           <div className="container relative mt-[100px]">
             <div className="max-w-[1166px] m-auto">
               <h2 className="sectionTitle text44 text-center mb-[50px]">
@@ -29,11 +29,11 @@ export const OurPhilosophy = ({ data }: any) => {
               <VideoModal videoLink={VideoSection?.VideoId} />
             </div>
           </div>
-        )}
-        <div className="absolute left-0 -top-[145px] z-50 tablet:hidden">
-          <img src="/assets/images/about-shape.png" alt="" />
+          <div className="absolute left-0 -top-[145px] z-50 tablet:hidden">
+            <img src="/assets/images/about-shape.png" alt="" />
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 };
