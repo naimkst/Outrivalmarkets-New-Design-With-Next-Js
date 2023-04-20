@@ -63,7 +63,7 @@ const GraphicDesign = ({ data }: any) => {
                 </div>
                 <ReactMarkdown>{`${graphicsDesign?.ShortDescription}`}</ReactMarkdown>
                 <Link
-                  href={String(graphicsDesign?.ButtonLink)}
+                  href={String(graphicsDesign?.ButtonUrl)}
                   className="theme-btn mt-4 videoButtonGradient bg-white h-[70px] w-[349px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]"
                 >
                   {graphicsDesign?.ButtonText}
