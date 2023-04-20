@@ -559,3 +559,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .about-text {
   @apply text40 font-bold text-black;
 }
+
+.web-graphic-wrap ul li {
+  font-size: 38px;
+  color: white;
+  list-style: disc;
+  margin-left: 20px;
+  font-weight: bold;
+}
