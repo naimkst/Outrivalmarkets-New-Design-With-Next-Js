@@ -98,7 +98,9 @@ const ContactForm = ({ data }: any) => {
             >
               <option>Select Subject</option>
               {contactData?.ServiceDropdown?.map((item: any) => (
-                <option value={item?.Title}>{item?.Title}</option>
+                <option key={`optionSubject${item}`} value={item?.Title}>
+                  {item?.Title}
+                </option>
               ))}
             </select>
             {validator.message("subject", forms.subject, "required")}
