@@ -107,30 +107,33 @@ const PortfolioSection = ({ portfolios, category, data }: any) => {
                         .replace(/^-+|-+$/g, "")}`}
                       key={`portfolio-${index}`}
                     >
-                      <div className="img-holder">
-                        <Image
-                          src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
-                            item?.attributes?.Thumbnail?.data?.attributes?.url
-                              ? item?.attributes?.Thumbnail?.data?.attributes
-                                  ?.url
-                              : ""
-                          }`}
-                          width={
-                            item?.attributes?.Thumbnail?.data?.attributes?.width
-                              ? item?.attributes?.Thumbnail?.data?.attributes
-                                  ?.width
-                              : 100
-                          }
-                          height={
-                            item?.attributes?.Thumbnail?.data?.attributes
-                              ?.height
-                              ? item?.attributes?.Thumbnail?.data?.attributes
-                                  ?.height
-                              : 100
-                          }
-                          className="img img-responsive"
-                          alt=""
-                        />
+                      <div className="img-holder relative">
+                        <div className="portfolioImage">
+                          <Image
+                            src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
+                              item?.attributes?.Thumbnail?.data?.attributes?.url
+                                ? item?.attributes?.Thumbnail?.data?.attributes
+                                    ?.url
+                                : ""
+                            }`}
+                            width={
+                              item?.attributes?.Thumbnail?.data?.attributes
+                                ?.width
+                                ? item?.attributes?.Thumbnail?.data?.attributes
+                                    ?.width
+                                : 100
+                            }
+                            height={
+                              item?.attributes?.Thumbnail?.data?.attributes
+                                ?.height
+                                ? item?.attributes?.Thumbnail?.data?.attributes
+                                    ?.height
+                                : 100
+                            }
+                            className="img img-responsive"
+                            alt=""
+                          />
+                        </div>
                         <div className="portfolio-content">
                           <h2>
                             <Link
