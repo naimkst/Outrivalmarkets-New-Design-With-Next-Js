@@ -2,6 +2,7 @@ import moment from "moment";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 export const BlogCardSection = ({ data, blogs }: any) => {
   console.log("blogs", blogs);
@@ -48,15 +49,15 @@ export const BlogCardSection = ({ data, blogs }: any) => {
                 <h3 className="text-[34px] font-medium mb-[30px] blogTitles">
                   {item?.attributes?.Title}
                 </h3>
-                <p className="text-[25px] text-black font-medium">
-                  {item?.attributes?.Description?.substring(0, 90)}
-                  ...
-                </p>
+                <ReactMarkdown className="text[18px] text-black font-medium">{`${item?.attributes?.Description?.substring(
+                  0,
+                  90
+                )}`}</ReactMarkdown>
               </div>
 
               <div className="flex justify-end mt-[25px] pb-[35px]">
                 <Link
-                  href={`/blog/${item?.id}`}
+                  href={`/blog/${item?.attributes?.slug}`}
                   className="phone:w-full phone:m-auto phone:px-[10px]"
                 >
                   <button className="blogReadMore text-white first-letter text-[11.31px]  bg-[#5E6469] font-bold inline-block w-[128px] h-[37px] rounded-l-full text-center phone:w-full phone:rounded-full">
@@ -115,10 +116,16 @@ export const BlogCardSection = ({ data, blogs }: any) => {
 
                 <div className="flex justify-between items-center mt-[25px] pb-[30px] pl-[20px] ml-10 phone:pl-0 phone:flex-col phone:ml-0">
                   <p className="text-black text-[12.74px] m-0 phone:hidden">
-                    Published On <span className="font-bold"> 30 June</span>
+                    Published On{" "}
+                    <span className="font-bold">
+                      {" "}
+                      {moment(item?.attributes?.publishedAt).format(
+                        "MMM Do YY"
+                      )}
+                    </span>
                   </p>
                   <Link
-                    href={`/blog/${item?.id}`}
+                    href={`/blog/${item?.slug}`}
                     className="phone:w-full phone:m-auto phone:px-[10px]"
                   >
                     <button className="blogReadMore text-white font-bold first-letter text-[11.31px]  bg-[#5E6469] inline-block w-[100px] h-[37px] rounded-l-full text-center phone:w-full phone:rounded-full">

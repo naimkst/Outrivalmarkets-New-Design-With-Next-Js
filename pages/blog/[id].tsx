@@ -19,9 +19,10 @@ export default function SingleBlog({ id }: any) {
   const [blog, setBlog] = useState<any>();
   const [url, setUrl] = useState<any>();
   const { loading, error, data } = useFetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/blogs/${id}?populate=deep`
+    `${process.env.NEXT_PUBLIC_API_URL}/blogs?populate=deep&[filters][slug][$eq]=${id}`
   );
 
+  console.log("@@@@@@@@@@@@@@@", data);
   const {
     loading: singleBlogLoading,
     error: singleBlogErrors,
@@ -48,7 +49,7 @@ export default function SingleBlog({ id }: any) {
                   rgba(232, 80, 91, 0.8) 57%,
                   rgba(0, 0, 0, 0.8) 100%
                 ),
-                url(${process.env.NEXT_PUBLIC_API_BASE_URL}${blog?.data
+                url(${process.env.NEXT_PUBLIC_API_BASE_URL}${blog?.data[0]
                   ?.attributes?.BannerImage?.data?.attributes?.url});
             }
           `}</style>
@@ -62,13 +63,13 @@ export default function SingleBlog({ id }: any) {
                   Published on{" "}
                   <span className="font-bold">
                     {" "}
-                    {moment(blog?.data?.attributes?.publishedAt).format(
+                    {moment(blog?.data[0]?.attributes?.publishedAt).format(
                       "MMM Do YY"
                     )}
                   </span>
                 </p>
                 <h2 className="text-[88px] text-white font-Impact uppercase">
-                  {blog?.data?.attributes?.Title}
+                  {blog?.data[0]?.attributes?.Title}
                 </h2>
 
                 <div className="flex items-center justify-evenly max-w-[370px] m-auto pt-[30px]">
@@ -80,7 +81,7 @@ export default function SingleBlog({ id }: any) {
                       width={35}
                     />
                     <p className="text-[18] font-Impact text-white m-0">
-                      {blog?.data?.attributes?.MinRead}
+                      {blog?.data[0]?.attributes?.MinRead}
                     </p>
                   </div>
                   <span className="h-[39px] w-[1px] bg-[#FFFFFF]"></span>
@@ -96,6 +97,13 @@ export default function SingleBlog({ id }: any) {
                     </p>
                   </div>
                 </div>
+                {blog?.data[0]?.attributes?.Author && (
+                  <div className="mt-[15px]">
+                    <p className="text-[#f9f9f9] text-[16px] !capitalize">
+                      By: {blog?.data[0]?.attributes?.Author}
+                    </p>
+                  </div>
+                )}
               </div>
               <div className="py-16 arrow-sec">
                 <AnchorLink className="arrow-btn" href="#blog">
@@ -118,8 +126,9 @@ export default function SingleBlog({ id }: any) {
               <div>
                 <img
                   src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
-                    blog?.data?.attributes?.Thumbnail?.data?.attributes?.url
-                      ? blog?.data?.attributes?.Thumbnail?.data?.attributes?.url
+                    blog?.data[0]?.attributes?.Thumbnail?.data?.attributes?.url
+                      ? blog?.data[0]?.attributes?.Thumbnail?.data?.attributes
+                          ?.url
                       : ""
                   }`}
                   height={1080}
@@ -128,35 +137,41 @@ export default function SingleBlog({ id }: any) {
                   className="mb-[80px]"
                 />
               </div>
-              <ReactMarkdown className="blog-content">{`${blog?.data?.attributes?.Description}`}</ReactMarkdown>
+              <ReactMarkdown className="blog-content">{`${blog?.data[0]?.attributes?.Description}`}</ReactMarkdown>
             </div>
           </div>
         </div>
 
-        <div className="brand-sec relative  container rounded-[20px] w-[80%] text-center z-50 tablet:w-full tablet:px-5 tablet:mt-12 tablet:overflow-hidden mt-10 mb-[50px]">
-          <div className="aboutBackground">
-            <div className="py-[52px] px-[100px] phone:px-4">
-              <p className="para text-white phone:text-[40px]">
-                {singlePageData?.data?.attributes?.BrandAwareness?.Title}
-              </p>
+        {singlePageData?.data[0]?.attributes?.BrandAwareness?.Title && (
+          <div className="brand-sec relative  container rounded-[20px] w-[80%] text-center z-50 tablet:w-full tablet:px-5 tablet:mt-12 tablet:overflow-hidden mt-10 mb-[50px]">
+            <div className="aboutBackground">
+              <div className="py-[52px] px-[100px] phone:px-4">
+                <p className="para text-white phone:text-[40px]">
+                  {singlePageData?.data[0]?.attributes?.BrandAwareness?.Title}
+                </p>
 
-              <p className="text25 text-white w-[70%] m-auto py-[20px] phone:w-full phone:px-0 tablet:w-full tablet:px-0">
-                {singlePageData?.data?.attributes?.BrandAwareness?.Description}
-              </p>
-              <div className="pt-10">
-                <Link
-                  href={String(
-                    singlePageData?.data?.attributes?.BrandAwareness?.ButtonUrl
-                  )}
-                >
-                  <button className="bg-white h-[70px] px-[40px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
-                    <p className="heroButtonGradient text24">{`${singlePageData?.data?.attributes?.BrandAwareness?.ButtonText}`}</p>
-                  </button>
-                </Link>
+                <p className="text25 text-white w-[70%] m-auto py-[20px] phone:w-full phone:px-0 tablet:w-full tablet:px-0">
+                  {
+                    singlePageData?.data[0]?.attributes?.BrandAwareness
+                      ?.Description
+                  }
+                </p>
+                <div className="pt-10">
+                  <Link
+                    href={String(
+                      singlePageData?.data[0]?.attributes?.BrandAwareness
+                        ?.ButtonUrl
+                    )}
+                  >
+                    <button className="bg-white h-[70px] px-[40px] text24 font-bold rounded-[7px] phone:w-auto phone:px-[40px]">
+                      <p className="heroButtonGradient text24">{`${singlePageData?.data[0]?.attributes?.BrandAwareness?.ButtonText}`}</p>
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
 
         <div className="marketing-section seo section-padding">
           <div className="container">
@@ -166,9 +181,9 @@ export default function SingleBlog({ id }: any) {
                   <div className="marketing-img d-none d-lg-block">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
-                        blog?.data?.attributes?.BlogLeftImage?.data?.attributes
-                          ?.url
-                          ? blog?.data?.attributes?.BlogLeftImage?.data
+                        blog?.data[0]?.attributes?.BlogLeftImage?.data
+                          ?.attributes?.url
+                          ? blog?.data[0]?.attributes?.BlogLeftImage?.data
                               ?.attributes?.url
                           : ""
                       }`}
@@ -183,9 +198,9 @@ export default function SingleBlog({ id }: any) {
                     <div className="web-creation-img d-block d-lg-none">
                       <Image
                         src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
-                          blog?.data?.attributes?.BlogLeftImage?.data
+                          blog?.data[0]?.attributes?.BlogLeftImage?.data
                             ?.attributes?.url
-                            ? blog?.data?.attributes?.BlogLeftImage?.data
+                            ? blog?.data[0]?.attributes?.BlogLeftImage?.data
                                 ?.attributes?.url
                             : ""
                         }`}
@@ -194,7 +209,7 @@ export default function SingleBlog({ id }: any) {
                         height={1080}
                       />
                     </div>
-                    <ReactMarkdown>{`${blog?.data?.attributes?.BlogRightContent}`}</ReactMarkdown>
+                    <ReactMarkdown>{`${blog?.data[0]?.attributes?.BlogRightContent}`}</ReactMarkdown>
                   </div>
                 </div>
               </div>
@@ -209,7 +224,7 @@ export default function SingleBlog({ id }: any) {
         <div className=" max-w-[1292px] pt-[0px] m-auto" id="blog">
           <div className="container m-auto">
             <div className="pt-[98px] blogContainer m-auto tablet:pt-[50px]">
-              <ReactMarkdown className="blog-content">{`${blog?.data?.attributes?.BottomContent}`}</ReactMarkdown>
+              <ReactMarkdown className="blog-content">{`${blog?.data[0]?.attributes?.BottomContent}`}</ReactMarkdown>
             </div>
           </div>
         </div>

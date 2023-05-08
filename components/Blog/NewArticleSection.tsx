@@ -2,6 +2,7 @@ import moment from "moment";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 export const NewArticleSection = ({ data, title }: any) => {
   return (
@@ -49,10 +50,10 @@ export const NewArticleSection = ({ data, title }: any) => {
                   <h3 className="text-[32px] font-medium blogTitles mb-[20px]">
                     {item?.attributes?.Title}
                   </h3>
-                  <p className="text[18px] text-black font-medium">
-                    {item?.attributes?.Description?.substring(0, 70)}
-                    ...
-                  </p>
+                  <ReactMarkdown className="text[18px] text-black font-medium">{`${item?.attributes?.Description?.substring(
+                    0,
+                    70
+                  )}`}</ReactMarkdown>
                 </div>
 
                 <div className="flex justify-between items-center mt-[25px] pb-[30px] pl-[20px] ml-10 phone:pl-0 phone:flex-col phone:ml-0">
@@ -66,7 +67,7 @@ export const NewArticleSection = ({ data, title }: any) => {
                     </span>
                   </p>
                   <Link
-                    href={`/blog/${item?.id}`}
+                    href={`/blog/${item?.attributes?.slug}`}
                     className="phone:w-full phone:px-[10px] phone:m-auto"
                   >
                     <button className="blogReadMore text-white font-bold first-letter text-[11.31px]  bg-[#5E6469] inline-block w-[100px] h-[37px] rounded-l-full text-center phone:w-full phone:rounded-full">

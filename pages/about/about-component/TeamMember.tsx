@@ -73,10 +73,22 @@ const TeamMember = ({ data }: any) => {
                 <div className={`team-item gradient-bg`}>
                   <div className="team-img">
                     <Image
-                      src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${team?.attributes?.Image?.data?.attributes?.url}`}
+                      src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
+                        team?.attributes?.Image?.data?.attributes?.url
+                          ? team?.attributes?.Image?.data?.attributes?.url
+                          : ""
+                      }`}
                       alt=""
-                      height={team?.attributes?.Image?.data?.attributes?.height}
-                      width={team?.attributes?.Image?.data?.attributes?.width}
+                      height={
+                        team?.attributes?.Image?.data?.attributes?.height
+                          ? team?.attributes?.Image?.data?.attributes?.height
+                          : 1024
+                      }
+                      width={
+                        team?.attributes?.Image?.data?.attributes?.width
+                          ? team?.attributes?.Image?.data?.attributes?.width
+                          : 1920
+                      }
                     />
                   </div>
                   <div className="team-text">
