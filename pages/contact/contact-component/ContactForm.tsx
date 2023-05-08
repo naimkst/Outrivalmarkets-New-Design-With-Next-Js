@@ -39,7 +39,6 @@ const ContactForm = ({ data }: any) => {
     }
   };
 
-  console.log(data, "ContactForm");
   const contactData = data?.data?.attributes;
   return (
     <form
@@ -122,7 +121,7 @@ const ContactForm = ({ data }: any) => {
           type="submit"
           className="contactUsButton text-[20px] font-bold text-white h-[60px] px-[20px]"
         >
-          Send My Message
+          {contactData?.SendButtonText}
         </button>
       </div>
     </form>

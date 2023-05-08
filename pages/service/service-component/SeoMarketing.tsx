@@ -8,7 +8,10 @@ const SeoMarketing = ({ data }: any) => {
   const SEOService = data?.data?.attributes?.SEOService;
 
   return (
-    <div className="marketing-section seo section-padding">
+    <div
+      className="marketing-section seo section-padding"
+      id={SEOService?.ServiceSectionId}
+    >
       <div className="container">
         <div className="marketing-wrap">
           <div className="row">

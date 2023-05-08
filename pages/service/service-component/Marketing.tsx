@@ -8,7 +8,10 @@ const Marketing = ({ data }: any) => {
   const MarketingStrategies = data?.data?.attributes?.MarketingStrategies;
 
   return (
-    <div className="marketing-section section-padding">
+    <div
+      className="marketing-section section-padding"
+      id={MarketingStrategies?.ServiceSectionId}
+    >
       <div className="container">
         <div className="marketing-wrap">
           <div className="row">

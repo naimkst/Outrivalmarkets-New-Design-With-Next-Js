@@ -8,7 +8,10 @@ const EmailMarketing = ({ data }: any) => {
   const EmailMarketing = data?.data?.attributes?.EmailMarketing;
 
   return (
-    <div className="marketing-section section-padding">
+    <div
+      className="marketing-section section-padding"
+      id={EmailMarketing?.ServiceSectionId}
+    >
       <div className="container">
         <div className="marketing-wrap">
           <div className="row">
