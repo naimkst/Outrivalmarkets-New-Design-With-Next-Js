@@ -17,7 +17,7 @@ const Contactpage = ({ data }: any) => {
               </p>
             </div>
             <div className="contact-form-area">
-              <ContactForm />
+              <ContactForm data={data} />
             </div>
           </div>
         </div>

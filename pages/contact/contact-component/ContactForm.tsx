@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SimpleReactValidator from "simple-react-validator";
 
-const ContactForm = () => {
+const ContactForm = ({ data }: any) => {
   const [forms, setForms] = useState({
     name: "",
     email: "",
@@ -39,6 +39,8 @@ const ContactForm = () => {
     }
   };
 
+  console.log(data, "ContactForm");
+  const contactData = data?.data?.attributes;
   return (
     <form
       onSubmit={(e) => submitHandler(e)}
@@ -95,10 +97,10 @@ const ContactForm = () => {
               // type="text"
               name="subject"
             >
-              <option>Choose a Service</option>
-              <option>Web Design</option>
-              <option>Web Development</option>
-              <option>Graphic design</option>
+              <option>Select Subject</option>
+              {contactData?.ServiceDropdown?.map((item: any) => (
+                <option value={item?.Title}>{item?.Title}</option>
+              ))}
             </select>
             {validator.message("subject", forms.subject, "required")}
           </div>

@@ -7,6 +7,12 @@ import useFetch from "../../hooks/useFetch";
 export const Navigation = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
+  const { loading, error, data } = useFetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/global-settiing?populate=deep`
+  );
+  const settings: any = data;
+  const navigation: any = settings?.data?.attributes?.Settings?.Navigation;
+
   return (
     <div>
       <div
@@ -33,10 +39,10 @@ export const Navigation = () => {
                 className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/"
               >
-                Home
+                {navigation?.HomeName}
               </Link>
               <p className="text-black text-center font-bold group-hover:text-primary">
-                Our Home Sweet Home
+                {navigation?.HomeDescription}
               </p>
             </li>
             <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
@@ -45,10 +51,10 @@ export const Navigation = () => {
                 href="/about"
                 className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
               >
-                About
+                {navigation?.AboutName}
               </Link>
               <p className="text-black text-center font-bold group-hover:text-primary">
-                Insights On Who We Are
+                {navigation?.AboutDescription}
               </p>
             </li>
             <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
@@ -57,10 +63,10 @@ export const Navigation = () => {
                 className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/service"
               >
-                Service
+                {navigation?.ServicesName}
               </Link>
               <p className="text-black text-center font-bold group-hover:text-primary">
-                A Glimpse Of The Magic We Do
+                {navigation?.ServicesDescription}
               </p>
             </li>
             <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
@@ -69,10 +75,10 @@ export const Navigation = () => {
                 className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/portfolio"
               >
-                Portfolio
+                {navigation?.PortfolioName}
               </Link>
               <p className="text-black text-center font-bold group-hover:text-primary">
-                A Glimpse Of The Magic We Do
+                {navigation?.PortfolioDescription}
               </p>
             </li>
             <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
@@ -81,10 +87,10 @@ export const Navigation = () => {
                 className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/blog"
               >
-                Latest Blog
+                {navigation?.BlogName}
               </Link>
               <p className="text-black text-center font-bold group-hover:text-primary">
-                Hey Y’never Know! Let’s Hear From You
+                {navigation?.BlogDescription}
               </p>
             </li>
             <li className="mb-6 group menuHoverGradientColor  text-black tablet:mb-4">
@@ -93,10 +99,10 @@ export const Navigation = () => {
                 className="text-[65px] leading-[95px] font-bold uppercase tablet:text-[50px] tablet:leading-[80px]"
                 href="/contact"
               >
-                Contact Us
+                {navigation?.ContactName}
               </Link>
               <p className="text-black text-center font-bold group-hover:text-primary">
-                Hey Y’never Know! Let’s Hear From You
+                {navigation?.ContactDescription}
               </p>
             </li>
           </ul>
