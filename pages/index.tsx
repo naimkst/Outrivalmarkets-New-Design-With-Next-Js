@@ -15,6 +15,7 @@ import { CreativeMindSection } from "../components/component/CreativeMindSection
 import { OurProcessSection } from "../components/component/OurProcessSection";
 import useFetch from "../hooks/useFetch";
 import { Loading } from "../components/Loader";
+import { SEO } from "../components/SEO";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,11 +23,22 @@ export default function Home() {
   const { loading, error, data } = useFetch(
     `${process.env.NEXT_PUBLIC_API_URL}/home-page?populate=deep`
   );
+  const {
+    loading: globalLoading,
+    error: globalError,
+    data: globalData,
+  } = useFetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/global-settiing?populate=deep`
+  );
+  const settings: any = globalData;
+  console.log(settings?.data?.attributes, "global data");
+
   if (loading) {
     return <Loading />;
   } else {
     return (
       <>
+        <SEO />
         <HeroSection data={data} />
         <OurPhilosophy data={data} />
         <AboutSection data={data} />

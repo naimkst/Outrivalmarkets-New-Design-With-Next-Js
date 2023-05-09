@@ -9,10 +9,7 @@ const GraphicDesign = ({ data }: any) => {
   const graphicsDesign = data?.data?.attributes?.graphicsDesign;
 
   return (
-    <div
-      className="web-graphic-section section-padding"
-      id={graphicsDesign?.ServiceSectionId}
-    >
+    <div className="web-graphic-section section-padding" id="graphicsDesign">
       <div className="container">
         <div className="web-graphic-wrap">
           <div className="row">

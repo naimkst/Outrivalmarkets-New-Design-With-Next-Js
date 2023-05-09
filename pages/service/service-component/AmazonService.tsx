@@ -9,10 +9,7 @@ const AmazonService = ({ data }: any) => {
   const graphicsDesign = data?.data?.attributes?.AmazonServices;
 
   return (
-    <div
-      className="web-graphic-section section-padding"
-      id={graphicsDesign?.ServiceSectionId}
-    >
+    <div className="web-graphic-section section-padding" id="AmazonServices">
       <div className="container">
         <div className="web-graphic-wrap">
           <div className="row">

@@ -68,13 +68,14 @@ export const TestimonialSection = ({ data }: any) => {
               className="slide-item py-[40px] md:py-[90px]"
             >
               <div className="rounded-[10px] px-8 py-10 content-center text-center testimonialHover group hover:cursor-pointer testimonialBg">
-                <img
-                  src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${item?.attributes?.Image?.data?.attributes?.url}`}
-                  width={166}
-                  height={166}
-                  className="rounded-full object-cover inline-block text-center"
-                />
-
+                {item?.attributes?.Image?.data?.attributes?.url && (
+                  <img
+                    src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${item?.attributes?.Image?.data?.attributes?.url}`}
+                    width={166}
+                    height={166}
+                    className="rounded-full object-cover inline-block text-center"
+                  />
+                )}
                 <p className="text25 font-bold my-2">
                   <span>
                     <ImQuotesLeft className="left-0 mb-3" />

@@ -3,6 +3,7 @@ import { SlMenu } from "react-icons/sl";
 import { MdOutlineClose } from "react-icons/md";
 import Link from "next/link";
 import useFetch from "../../hooks/useFetch";
+import Head from "next/head";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -15,6 +16,12 @@ export const Navigation = () => {
 
   return (
     <div>
+      <Head>
+        <link
+          rel="shortcut icon"
+          href={`${process.env.NEXT_PUBLIC_API_BASE_URL}${settings?.data?.attributes?.Settings?.Favicon?.data?.attributes?.url}`}
+        />
+      </Head>
       <div
         onClick={() => {
           setIsOpen(!isOpen);

@@ -8,10 +8,7 @@ const Marketing = ({ data }: any) => {
   const MarketingStrategies = data?.data?.attributes?.MarketingStrategies;
 
   return (
-    <div
-      className="marketing-section section-padding"
-      id={MarketingStrategies?.ServiceSectionId}
-    >
+    <div className="marketing-section section-padding" id="MarketingStrategies">
       <div className="container">
         <div className="marketing-wrap">
           <div className="row">
@@ -41,7 +38,6 @@ const Marketing = ({ data }: any) => {
                     }
                   />
                 </div>
-                <p>{`We know that creating a website and designing some graphics is only half the battle. That's why we also offer marketing strategizing to combine all of our services and set forth a compelling marketing strategy that will make you the talk of the town.`}</p>
 
                 <ReactMarkdown>{`${MarketingStrategies?.ShortDescription}`}</ReactMarkdown>
 

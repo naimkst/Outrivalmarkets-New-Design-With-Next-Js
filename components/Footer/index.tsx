@@ -23,19 +23,21 @@ export const Footer = () => {
         <div className="container m-auto grid tablet:grid-cols-1 gap-4 justify-between grid-cols-4">
           <div>
             <div className="flex justify-center content-center md:content-start">
-              <Image
-                className="m-auto content-center"
-                src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
-                  settings?.data?.attributes?.Settings?.FooterLogo?.data
-                    ?.attributes?.url
-                    ? settings?.data?.attributes?.Settings?.FooterLogo?.data
-                        ?.attributes?.url
-                    : "/assets/images/footer-logo.png"
-                }`}
-                alt={"Footer Logo"}
-                width={186}
-                height={115}
-              />
+              <Link href="/">
+                <Image
+                  className="m-auto content-center"
+                  src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
+                    settings?.data?.attributes?.Settings?.FooterLogo?.data
+                      ?.attributes?.url
+                      ? settings?.data?.attributes?.Settings?.FooterLogo?.data
+                          ?.attributes?.url
+                      : "/assets/images/footer-logo.png"
+                  }`}
+                  alt={"Footer Logo"}
+                  width={186}
+                  height={115}
+                />
+              </Link>
             </div>
             <div>
               <ul className="flex justify-center items-center gap-[20px] my-[25px] md:items-start">
@@ -73,12 +75,12 @@ export const Footer = () => {
               {settings?.data?.attributes?.CompnayMenu?.map(
                 (item: any, index: number) => (
                   <li key={`compnay${index}`}>
-                    <a
+                    <Link
                       className="text-white text-[19px] leading-[35px] font-[300] hover:text-[#FF8B2D] "
-                      href={item?.Link}
+                      href={`${item?.Link}`}
                     >
                       {item?.Title}
-                    </a>
+                    </Link>
                   </li>
                 )
               )}
@@ -92,12 +94,12 @@ export const Footer = () => {
               {settings?.data?.attributes?.ServiceMenu?.map(
                 (item: any, index: number) => (
                   <li key={`service${index}`}>
-                    <a
+                    <Link
                       className="text-white text-[19px] leading-[35px] font-[300] hover:text-[#FF8B2D] "
-                      href={item?.Link}
+                      href={`${item?.Link}`}
                     >
                       {item?.Title}
-                    </a>
+                    </Link>
                   </li>
                 )
               )}
@@ -115,22 +117,22 @@ export const Footer = () => {
               </div>
               <div className="mt-[20px] items-center flex  text-left justify-start">
                 <BsTelephone color="#fff" className="text-[25px] mr-4" />
-                <a
+                <Link
                   className="text-white text-[19px] leading-[30px] font-[300] hover:text-[#FF8B2D]"
                   href={`tel:${settings?.data?.attributes?.Settings?.Phone}`}
                 >
                   {settings?.data?.attributes?.Settings?.Phone}
-                </a>
+                </Link>
               </div>
 
               <div className="mt-[20px] items-center flex md:text-left md:justify-start">
                 <BiEnvelope color="#fff" className="text-[25px] mr-4" />
-                <a
+                <Link
                   className="text-white text-[19px] leading-[30px] font-[300] hover:text-[#FF8B2D]"
                   href={`mailto:${settings?.data?.attributes?.Settings?.Email}`}
                 >
                   {settings?.data?.attributes?.Settings?.Email}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

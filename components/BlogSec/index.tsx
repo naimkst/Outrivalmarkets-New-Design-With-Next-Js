@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import useFetch from "../../hooks/useFetch";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const BlogSec = () => {
   const { loading, error, data } = useFetch(
@@ -19,9 +20,8 @@ const BlogSec = () => {
   const blog: any = allBlog;
   const settings: any = data;
 
-  console.log("###", blog);
   return (
-    <div className="blogSection pt-[100px] md:pb-[140px] pb-[60px] bg-auto md:px-0 px-10 mt-[150px] overflow-x-hidden tablet:px-5 tablet:text-center phone:my-12">
+    <div className="bg-[url('/assets/images/blog/blog-bg.svg')] bg-no-repeat tablet:bg-cover pt-[100px] md:pb-[200px] pb-[60px] mb-[60px] bg-auto md:px-0 px-10 mt-[150px] overflow-x-hidden tablet:px-5 tablet:text-center phone:my-12 relative">
       <div className="absolute -right-[200px] top-0 z-50">
         <img src="/assets/images/video-shape.png" alt="" />
       </div>
@@ -65,11 +65,12 @@ const BlogSec = () => {
                   <h3 className="text-[26px] leading-[30px] font-bold text-[#090D48] my-2">
                     {item?.attributes?.Title}
                   </h3>
-                  <p className="text-[#303030] text-[18px] leading-[26px] mb-4">
-                    {item?.attributes?.Description?.substring(0, 80)}
-                    ...
-                  </p>
-                  <Link href={`/blog/${item?.id}`}>
+
+                  <ReactMarkdown className="text-[#303030] text-[18px] leading-[26px] mb-4">{`${item?.attributes?.Description?.substring(
+                    0,
+                    80
+                  )}`}</ReactMarkdown>
+                  <Link href={`/blog/${item?.attributes?.slug}`}>
                     <p className="text-[#EC615B] hover:text-[#303030] text-[18px] font-bold">
                       Read More
                     </p>

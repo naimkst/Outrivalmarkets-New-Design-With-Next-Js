@@ -6,12 +6,8 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 const WebsiteCreation = ({ data }: any) => {
   const OurServices = data?.data?.attributes?.OurServices;
 
-  console.log("OurServices", OurServices);
   return (
-    <div
-      className="web-creation-section section-padding"
-      id={OurServices?.ServiceSectionId}
-    >
+    <div className="web-creation-section section-padding" id="websites">
       <div className="container">
         <div className="web-creation-wrap">
           <div className="web-creation-top">
