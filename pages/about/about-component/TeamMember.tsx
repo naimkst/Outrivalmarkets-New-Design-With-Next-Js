@@ -71,26 +71,28 @@ const TeamMember = ({ data }: any) => {
             {Teams?.data?.map((team: any, aitem: any) => (
               <div className="col col-lg-4 col-md-6 col-12" key={aitem}>
                 <div className={`team-item gradient-bg`}>
-                  <div className="team-img">
-                    <Image
-                      src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
-                        team?.attributes?.Image?.data?.attributes?.url
-                          ? team?.attributes?.Image?.data?.attributes?.url
-                          : ""
-                      }`}
-                      alt=""
-                      height={
-                        team?.attributes?.Image?.data?.attributes?.height
-                          ? team?.attributes?.Image?.data?.attributes?.height
-                          : 1024
-                      }
-                      width={
-                        team?.attributes?.Image?.data?.attributes?.width
-                          ? team?.attributes?.Image?.data?.attributes?.width
-                          : 1920
-                      }
-                    />
-                  </div>
+                  {team?.attributes?.Image?.data?.attributes?.url && (
+                    <div className="team-img">
+                      <Image
+                        src={`${process.env.NEXT_PUBLIC_API_BASE_URL}${
+                          team?.attributes?.Image?.data?.attributes?.url
+                            ? team?.attributes?.Image?.data?.attributes?.url
+                            : ""
+                        }`}
+                        alt=""
+                        height={
+                          team?.attributes?.Image?.data?.attributes?.height
+                            ? team?.attributes?.Image?.data?.attributes?.height
+                            : 1024
+                        }
+                        width={
+                          team?.attributes?.Image?.data?.attributes?.width
+                            ? team?.attributes?.Image?.data?.attributes?.width
+                            : 1920
+                        }
+                      />
+                    </div>
+                  )}
                   <div className="team-text">
                     <h2>{team?.attributes?.Name}</h2>
                     <span>{team?.attributes?.Designation}</span>

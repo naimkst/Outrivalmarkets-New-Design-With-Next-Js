@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import SimpleReactValidator from "simple-react-validator";
 
 const ContactForm = ({ data }: any) => {
+  const [loading, setLoading] = React.useState(false);
+  const [submitMessage, setSubmitMessage] = React.useState(false);
+  const [submitErrMsg, setSubmitErrMsg] = React.useState(false);
   const [forms, setForms] = useState({
     name: "",
     email: "",
@@ -24,19 +27,28 @@ const ContactForm = ({ data }: any) => {
   };
 
   const submitHandler = (e: any) => {
+    console.log(e, "form data ===");
+    setLoading(true);
     e.preventDefault();
-    if (validator.allValid()) {
-      validator.hideMessages();
-      setForms({
-        name: "",
-        email: "",
-        subject: "",
-        phone: "",
-        message: "",
+    const formData: any = {};
+    Array.from(e.target.elements).forEach((field: any) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+    const sendMail = fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setLoading(false);
+        if (data.success === true) {
+          setSubmitMessage(true);
+        } else {
+          setSubmitErrMsg(true);
+        }
+        console.log(data);
       });
-    } else {
-      validator.showMessages();
-    }
   };
 
   const contactData = data?.data?.attributes;
@@ -126,6 +138,18 @@ const ContactForm = ({ data }: any) => {
           {contactData?.SendButtonText}
         </button>
       </div>
+
+      {submitErrMsg && (
+        <p className="text-center text-red-500">
+          Thanks for contacting us! We will get back to you soon.
+        </p>
+      )}
+
+      {submitMessage && (
+        <p className="text-center text-black">
+          Thanks for contacting us! We will get back to you soon.
+        </p>
+      )}
     </form>
   );
 };
