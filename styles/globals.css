@@ -583,3 +583,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     rgba(9, 13, 72, 0.8547794117647058) 100%
   );
 }
+.bg-custom-background {
+  background-image: url("/assets/images/blog/blog-bg.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+@media (min-width: 1921px) {
+  .bg-custom-background {
+    background-image: url("/assets/images/blog/blog-shape-logn.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: contain;
+  }
+}

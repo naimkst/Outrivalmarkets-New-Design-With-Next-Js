@@ -21,7 +21,7 @@ const BlogSec = () => {
   const settings: any = data;
 
   return (
-    <div className="bg-[url('/assets/images/blog/blog-bg.svg')] bg-no-repeat tablet:bg-cover pt-[100px] md:pb-[200px] pb-[60px] mb-[60px] bg-auto md:px-0 px-10 mt-[150px] overflow-x-hidden tablet:px-5 tablet:text-center phone:my-12 relative">
+    <div className="bg-custom-background bg-no-repeat tablet:bg-cover pt-[100px] md:pb-[200px] dektop4k:pb-[155px] pb-[60px] mb-[60px] bg-auto md:px-0 px-10 mt-[150px] overflow-x-hidden tablet:px-5 tablet:text-center phone:my-12 relative">
       <div className="absolute -right-[200px] top-0 z-50">
         <img src="/assets/images/video-shape.png" alt="" />
       </div>

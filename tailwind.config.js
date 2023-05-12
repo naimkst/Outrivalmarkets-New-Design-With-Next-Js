@@ -19,6 +19,8 @@ module.exports = {
         Impact: ['"Maximum Impact"', "sans-serif"],
       },
       screens: {
+        dektop4k: { min: "1921px" },
+        
         desktop1440: { max: "1440px" },
 
         desktop: { max: "1279px" },
