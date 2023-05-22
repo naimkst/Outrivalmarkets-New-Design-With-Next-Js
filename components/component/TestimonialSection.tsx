@@ -38,6 +38,10 @@ export const TestimonialSection = ({ data }: any) => {
           freeMode={true}
           onActiveIndexChange={(e) => console.log(e)}
           breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
             375: {
               slidesPerView: 1,
               spaceBetween: 20,
